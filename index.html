@@ -127,6 +127,107 @@ main{flex:1;min-width:0;display:flex;flex-direction:column}
 .frm input{border:1px solid var(--line2);padding:6px 8px;font-size:12px;width:100%}
 .hint{font-size:11px;color:var(--muted);line-height:1.7}
 .tag-s{font-size:10px;color:var(--muted);font-weight:400;margin-left:6px}
+.g3{grid-template-columns:repeat(3,minmax(0,1fr))}.g5{grid-template-columns:repeat(5,minmax(0,1fr))}.g-37{grid-template-columns:minmax(0,5fr) minmax(0,7fr)}
+.ui-tabs{display:flex;align-items:flex-end;gap:5px;padding:0 2px;border-bottom:2.5px solid var(--accent);overflow-x:auto;white-space:nowrap;margin:2px 0 14px}
+.ui-tab{position:relative;top:1px;padding:7px 16px;font-weight:600;color:#64748b;font-size:12px;background:#eef2f8;border:1px solid #dbe3ee;border-bottom:none;white-space:nowrap;flex:0 0 auto}
+.ui-tab:hover{background:#e4ebf5;color:var(--ink2)}.ui-tab.on{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:700}
+.ui-tab .tn{margin-left:6px;font-size:10px;padding:0 5px;background:#e11d48;color:#fff;font-weight:700}.ui-tab.on .tn{background:rgba(255,255,255,.25)}
+button.side-g{width:100%;background:none;border:none;cursor:pointer;text-align:left;border-radius:6px;padding:9px 10px 6px 12px;margin-top:2px}
+button.side-g:hover{background:rgba(255,255,255,.05)}button.side-g.act{color:#fff}
+.side-g .sgc{margin-left:auto;font-size:10px;color:#8fa9d6;transition:transform .15s}.side-g.closed .sgc{transform:rotate(-90deg)}
+.side-g .n{background:#e11d48;color:#fff;font-size:10px;padding:0 5px;font-weight:700;margin-left:auto}.side-g .n+.sgc{margin-left:6px}
+.side-x{margin-left:auto;background:none;border:1px solid rgba(255,255,255,.2);color:#9bb4e0;width:22px;height:22px;font-size:13px;line-height:1;padding:0}
+.side-x:hover{color:#fff;border-color:rgba(255,255,255,.5)}
+.side-tools{display:flex;gap:4px;padding:8px 10px 2px}.side-tools button{flex:1;font-size:10.5px;color:#9bb4e0;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);padding:3px 0}
+.side-tools button:hover{color:#fff}
+@media (min-width:769px){body.side-hide aside{display:none}body.side-hide .menu-btn{display:inline-block}}
+.ring{display:block;flex-shrink:0}
+.hero{display:grid;grid-template-columns:170px minmax(0,1fr) 180px;background:#fff;border:1px solid var(--line);box-shadow:0 1px 2px rgba(15,23,42,.04)}
+.hero-v{color:#fff;padding:14px 18px;display:flex;flex-direction:column;justify-content:center}
+.hv-l{font-size:11px;opacity:.9}.hv-b{font-size:36px;font-weight:900;letter-spacing:-1px;line-height:1.1;margin:3px 0}.hv-s{font-size:11.5px;opacity:.92}
+.hero-r{padding:12px 16px;font-size:12px;line-height:1.6;min-width:0}
+.hr-i{display:flex;gap:8px;align-items:flex-start;margin-bottom:6px}.hr-s{color:var(--muted);font-size:11.5px}
+.hr-over{color:#b91c1c;font-weight:700;margin-bottom:4px}.hr-note{border-top:1px dashed var(--line);padding-top:6px;margin-top:4px}
+.hero-d{display:flex;flex-direction:column;align-items:center;justify-content:center;border-left:1px solid var(--line);padding:10px}
+.hd-s{font-size:11px;color:var(--muted);margin-top:4px}
+.kv-row{display:flex;align-items:center;justify-content:space-between;gap:6px;margin-top:3px;min-height:46px}
+.kv-v{font-size:22px;font-weight:800;color:#1e2f5e;letter-spacing:-.6px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}.kv-v small{font-size:12px;color:var(--muted);font-weight:700;margin-left:2px}
+.kv-vis{flex-shrink:0}.ui-kpi.alert .kv-v{color:#dc2626}
+.pips{display:flex;gap:4px}.pips i{width:16px;height:24px;display:block}
+.mg{width:96px}.gauge.sm{height:12px}.gauge.sm .tg{top:-3px;bottom:-3px}
+.mdots{display:flex;gap:3px}.mdots i{width:11px;height:11px;display:block}
+.stk{display:flex;overflow:hidden;background:#eef2f7;width:100%}
+.stk i{display:flex;align-items:center;justify-content:center;font-style:normal;font-size:10.5px;font-weight:700;white-space:nowrap;overflow:hidden;border-right:1px solid #fff;min-width:0}
+.stk i:last-child{border-right:none}
+.stk.tall{height:66px}.stk.tall i{flex-direction:column;gap:2px;padding:0 2px}.stk.tall i span{font-size:10.5px;font-weight:700;overflow:hidden;text-overflow:ellipsis;max-width:100%}.stk.tall i em{font-style:normal;font-size:12.5px;font-weight:800}
+.gcard{background:#fff;border:1px solid var(--line);border-top:3px solid #1e2f5e;padding:12px;box-shadow:0 1px 2px rgba(15,23,42,.04);min-width:0}
+.gcard.st-risk,.gcard.st-fail{border-top-color:#dc2626}.gcard.prop{border-top-color:#d97706;background:#fffdf5}
+.gc-top{display:flex;gap:10px;align-items:center}.gc-id{font-size:13px;font-weight:800;color:#1e2f5e;display:flex;gap:6px;align-items:center}
+.gc-nm{font-size:12px;font-weight:700;color:#334155;margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.gc-d{font-size:11px;color:var(--muted);margin-top:2px;white-space:nowrap}
+.gc-bar{margin-top:10px}.gc-cap{font-size:10.5px;color:var(--muted);margin-top:3px}
+.gc-list{margin-top:6px;font-size:11.5px;color:#334155;line-height:1.6}.gc-list div{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.gc-list i{display:inline-block;width:5px;height:5px;background:#dc2626;margin-right:5px;vertical-align:2px}
+.dd{font-size:10.5px;font-weight:700;color:#64748b;background:#f1f5f9;padding:0 4px;margin-left:3px;white-space:nowrap}.dd.near{color:#b45309;background:#fffbeb}.dd.over{color:#fff;background:#dc2626}
+.dl{display:flex;flex-direction:column}.dl-i{display:flex;gap:10px;align-items:center;padding:7px 0;border-bottom:1px dashed var(--line)}.dl-i:last-child{border-bottom:none}
+.dl-d{width:80px;flex-shrink:0;display:flex;flex-direction:column;align-items:flex-start;gap:1px;border-left:3px solid #cbd5e1;padding-left:8px}.dl-d b{font-size:14px;color:#1e2f5e}.dl-d .dd{margin-left:0}
+.dl-i.near .dl-d{border-left-color:#d97706}.dl-i.over .dl-d{border-left-color:#dc2626}.dl-t{font-size:12px;min-width:0}.dl-t small{display:block;color:var(--muted);font-size:10.5px;margin-top:1px}
+.hb{display:flex;align-items:center;gap:8px;margin-bottom:8px}.hb-l{width:36px;font-size:12px;font-weight:700;color:#1e2f5e;flex-shrink:0}.hb-b{flex:1;min-width:0}.hb-v{width:40px;text-align:right;font-size:12px;font-weight:700;font-variant-numeric:tabular-nums}
+.gt{position:relative}.gt-row{display:grid;grid-template-columns:190px minmax(0,1fr) 56px;align-items:center;border-bottom:1px solid #eef1f6;min-height:42px}
+.gt-hd,.gt-hd2{min-height:22px;border-bottom:none}.gt-tr{position:relative;height:42px}.gt-hd .gt-tr,.gt-hd2 .gt-tr{height:22px}
+.gt-y{position:absolute;top:0;height:22px;font-size:11px;font-weight:800;color:#1e2f5e;border-left:2px solid #94a3b8;padding-left:5px;line-height:22px;background:#f1f3f7;overflow:hidden}
+.gt-q{position:absolute;top:0;height:22px;font-size:10px;color:#94a3b8;border-left:1px solid #dbe3ee;padding-left:4px;line-height:22px;overflow:hidden}
+.gt-tag{position:absolute;top:3px;transform:translateX(-50%);font-size:10px;font-weight:800;white-space:nowrap;background:#fff;padding:0 3px;z-index:5}
+.gl{position:absolute;top:0;bottom:0;border-left:1px solid #f3f5f9}.gl.q{border-left-color:#e5eaf1}.gl.y{border-left:1px solid #b8c2d1}
+.gl-today{position:absolute;top:0;bottom:0;border-left:2px solid #e11d48;z-index:3}.gl-launch{position:absolute;top:0;bottom:0;border-left:2px dashed #1e2f5e;z-index:3}
+.gt .g-bar{top:13px;height:16px;z-index:1}
+.ms{position:absolute;top:50%;width:10px;height:10px;transform:translate(-50%,-50%) rotate(45deg);background:#fff;border:1.5px solid #94a3b8;z-index:4}.ms.cr{border:2px solid #1e2f5e}.ms.dn{background:#1e2f5e;border-color:#1e2f5e}.ms.ov{background:#dc2626;border-color:#dc2626}
+.bar-row{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:10px}
+.ed.done{text-decoration:line-through;color:#94a3b8}
+.sbox{background:#fff;border:1px solid var(--line);border-top:3px solid #cbd5e1;padding:8px 12px}.sbox.on{box-shadow:inset 0 0 0 2px #1e2f5e}
+.sb-l{font-size:11.5px;color:var(--muted);font-weight:600}.sb-v{font-size:24px;font-weight:800;letter-spacing:-.5px;font-variant-numeric:tabular-nums}.sb-v small{font-size:12px;color:var(--muted);margin-left:2px}
+.stat-row{margin-bottom:12px}
+.ui-tbl tr.rl td:first-child{box-shadow:inset 3px 0 0 var(--rl)}
+.ccard{background:#fff;border:1px solid var(--line);border-top:3px solid #cbd5e1;padding:12px 14px;min-width:0}
+.cc-h{display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:13.5px;color:#1e2f5e}.cc-b{display:flex;gap:12px;align-items:center;margin:10px 0}
+.cc-m{font-size:12px;line-height:1.8;min-width:0}.cc-m div>span:first-child,.cc-c>span:first-child{display:inline-block;width:52px;color:var(--muted);font-size:11px}
+.cc-c{font-size:12px;border-top:1px dashed var(--line);padding-top:8px}.cc-i{margin-top:8px;background:#fef2f2;border:1px solid #fecaca;color:#b91c1c;font-size:12px;padding:6px 9px}
+.rc{display:inline-flex;align-items:center;justify-content:center;width:28px;height:22px;font-weight:800;font-size:12px}
+.rc-A{background:#1e2f5e;color:#fff}.rc-R{background:#3d6cca;color:#fff}.rc-C{background:#dbe4f4;color:#1e2f5e}.rc-I{background:#f1f5f9;color:#64748b;border:1px solid #e2e8f0}
+.bstep{display:flex;padding:6px 0 2px}.bs{flex:1;position:relative;text-align:center;padding:0 4px;min-width:0}
+.bs::before{content:'';position:absolute;top:17px;left:-50%;width:100%;height:4px;background:#e2e8f0;z-index:0}.bs:first-child::before{display:none}
+.bs-c{position:relative;z-index:1;width:38px;height:38px;border-radius:50%;margin:0 auto 8px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;background:#fff;border:3px solid #cbd5e1;color:#94a3b8}
+.bs.s-완료 .bs-c{background:#1e2f5e;border-color:#1e2f5e;color:#fff}.bs.s-완료::before{background:#1e2f5e}
+.bs.s-정체 .bs-c{border-color:#dc2626;color:#dc2626;box-shadow:0 0 0 5px #fee2e2}.bs.s-정체::before{background:linear-gradient(90deg,#1e2f5e,#dc2626)}
+.bs.s-진행 .bs-c{border-color:#d97706;color:#d97706;box-shadow:0 0 0 5px #fef3c7}.bs.s-진행::before{background:linear-gradient(90deg,#1e2f5e,#d97706)}
+.bs-n{font-size:12.5px;font-weight:800;color:#1e2f5e}.bs-d{font-size:11px;color:var(--muted);margin:2px 0 5px}
+.callout{margin-top:12px;background:#fff;border:1px solid var(--line);border-left:4px solid #d97706;padding:10px 14px}.callout.bad{border-left-color:#dc2626;background:#fffafa}
+.co-l{font-size:11px;font-weight:800;color:#b91c1c}.co-b{font-size:13px;margin:3px 0 8px}
+.dl2{display:flex;flex-direction:column;gap:9px;font-size:12px;min-width:150px;flex:1}.dl2 div{display:flex;align-items:center;gap:6px}.dl2 i{width:10px;height:10px;display:inline-block;flex-shrink:0}
+.dl2 b{margin-left:auto;font-size:14px;color:#1e2f5e;padding-left:12px}.dl2-th{border-top:1px dashed var(--line);padding-top:8px}
+.scale{display:flex;justify-content:space-between;font-size:10px;color:#94a3b8;margin-top:3px}
+.ib{display:flex;align-items:center;gap:6px}.ib-t{flex:1;height:10px;background:#eef2f7;min-width:40px}.ib-t i{display:block;height:100%}
+.ib span{font-size:12px;font-weight:700;font-variant-numeric:tabular-nums;white-space:nowrap;min-width:30px;text-align:right}
+.stl{display:flex;align-items:flex-start;padding:10px 0;overflow-x:auto}.stl-i{display:flex;flex-direction:column;align-items:center;gap:4px;min-width:130px;text-align:center}
+.stl-c{width:32px;height:32px;border-radius:50%;background:#fff;border:3px solid #d97706;display:flex;align-items:center;justify-content:center;font-weight:800;color:#d97706}
+.stl-i.r-보류 .stl-c{border-color:#dc2626;color:#dc2626;box-shadow:0 0 0 5px #fee2e2}.stl-i.r-입고 .stl-c{background:#059669;border-color:#059669;color:#fff}
+.stl-d{font-size:12.5px;font-weight:800;color:#1e2f5e}.stl-t{font-size:11px;color:var(--muted)}.stl-ln{flex:1;height:3px;background:#e2e8f0;margin-top:15px;min-width:30px}
+.rcard{background:#fff;border:1px solid var(--line);padding:12px 14px;display:flex;gap:14px;align-items:center;box-shadow:0 1px 2px rgba(15,23,42,.04)}
+.rc-sub{font-size:11.5px;color:#334155;margin-top:4px}.rc-ed{font-size:11px;color:var(--muted);margin-top:6px}
+.tp{display:inline-flex;align-items:center;gap:3px;font-weight:700}.tp i{width:7px;height:14px;display:inline-block}
+.chev-row{display:grid;margin-bottom:8px}
+.chev{position:relative;background:#dbe4f4;color:#1e2f5e;padding:10px 14px 10px 28px;clip-path:polygon(0 0,calc(100% - 14px) 0,100% 50%,calc(100% - 14px) 100%,0 100%,14px 50%);display:flex;align-items:center;gap:8px;margin-right:-10px}
+.chev:first-child{clip-path:polygon(0 0,calc(100% - 14px) 0,100% 50%,calc(100% - 14px) 100%,0 100%);padding-left:14px}.chev.now{background:#1e2f5e;color:#fff}
+.chev span{width:20px;height:20px;border-radius:50%;background:rgba(255,255,255,.7);color:#1e2f5e;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;flex-shrink:0}.chev b{font-size:12.5px}
+.lane.now{border:1px solid #1e2f5e;border-top:3px solid #1e2f5e}.rm-i{display:flex;gap:6px;align-items:baseline;line-height:1.8}.rm-i i{width:6px;height:6px;background:#3d6cca;flex-shrink:0;display:inline-block}
+.heat2{display:grid;grid-template-columns:22px minmax(0,1fr);grid-template-rows:1fr 22px}.hx-y{writing-mode:vertical-rl;transform:rotate(180deg);font-size:11px;color:var(--muted);text-align:center}
+.hx-g{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));grid-template-rows:repeat(3,minmax(96px,auto));gap:3px}.hx-x{grid-column:2;display:flex;justify-content:space-around;font-size:11px;color:var(--muted);padding-top:4px}
+.hc{position:relative;padding:8px 8px 6px;display:flex;flex-direction:column;gap:4px;min-width:0}.hc-s{position:absolute;right:6px;top:2px;font-size:20px;font-weight:900;color:rgba(15,23,42,.12)}
+.hc-r{font-size:11px;background:#fff;border:1px solid rgba(15,23,42,.1);padding:2px 5px;line-height:1.4;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;position:relative}.hc-r b{color:#1e2f5e;margin-right:4px}
+.rk-c{border:1px solid var(--line);border-left:4px solid #dc2626;padding:8px 10px;margin-bottom:8px}.rk-h{font-size:12.5px;font-weight:700;color:#0f172a;display:flex;gap:6px;align-items:center}.rk-h b{color:#dc2626}
+.rk-sc{margin-left:auto;background:#dc2626;color:#fff;font-size:11px;font-weight:800;padding:0 6px}.rk-a{font-size:12px;color:#334155;margin-top:4px}.rk-o{font-size:11px;color:var(--muted);margin-top:2px}
+.conn-st{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:700;color:#64748b;background:#f1f5f9;padding:4px 10px;margin-bottom:10px}.conn-st i{width:8px;height:8px;border-radius:50%;background:#94a3b8}
+.conn-st.ok{color:#047857;background:#ecfdf5}.conn-st.ok i{background:#059669}.conn-st.err{color:#b91c1c;background:#fef2f2}.conn-st.err i{background:#dc2626}
+@media (max-width:1100px){.g5{grid-template-columns:repeat(3,minmax(0,1fr))}.g-37,.g3{grid-template-columns:1fr}.hero{grid-template-columns:150px minmax(0,1fr)}.hero-d{display:none}}
+@media (max-width:768px){.g5{grid-template-columns:1fr 1fr}.hero{grid-template-columns:1fr}.hero-v{flex-direction:row;align-items:baseline;gap:10px;flex-wrap:wrap}.hv-b{font-size:26px}.gt-row{grid-template-columns:110px minmax(0,1fr) 40px}.bstep{flex-wrap:wrap}.bs{flex:0 0 33.3%;margin-bottom:10px}.bs::before{display:none}.chev-row{grid-template-columns:1fr !important;gap:4px}.chev,.chev:first-child{clip-path:none;margin-right:0;padding-left:14px}}
 @media (max-width:1100px){.g6{grid-template-columns:repeat(3,minmax(0,1fr))}.g-73{grid-template-columns:1fr}}
 @media (max-width:768px){aside{position:fixed;left:-220px;z-index:40;transition:left .25s}aside.open{left:0}.menu-btn{display:inline-block}.g2,.g4{grid-template-columns:1fr}.g6{grid-template-columns:repeat(2,minmax(0,1fr))}.g-row,.g-axis{grid-template-columns:110px 1fr 40px}.g-ovl{left:110px;right:40px}#view{padding:12px}.topbar .crumb{display:none}.steps{flex-wrap:wrap}.step{flex:0 0 33.3%}.verdict{flex-direction:column}.verdict .vl{flex-direction:row;align-items:baseline;gap:8px;padding:8px 14px}.tblwrap .ui-tbl{min-width:680px}.g-ticks span{font-size:9.5px}}
 @media print{aside,.topbar,.del,.ui-btn,.fold{display:none !important}body{background:#fff}.ui-card{break-inside:avoid;box-shadow:none}}
@@ -155,7 +256,7 @@ const TODAY = new Date(); TODAY.setHours(0, 0, 0, 0);
 
 /* ============ 상태 ============ */
 let DB = emptyDB();
-let UI = Object.assign({ page: 'p1', lang: 'ko', gf: 'all', scen: '기준', closed: {} }, jget(LS_UI) || {});
+let UI = Object.assign({ page: 'p1', lang: 'ko', gf: 'all', scen: '기준', closed: {}, tab: {}, sg: {}, sideHide: false }, jget(LS_UI) || {});
 let SYNC = { st: 'local', msg: '' };
 
 /* ============ 유틸 ============ */
@@ -176,7 +277,7 @@ function isoWeek(d) { const t = new Date(Date.UTC(d.getFullYear(), d.getMonth(),
 const col = (t, f) => SCHEMA[t].cols.find(c => c.k === f);
 
 /* ============ 번역 (화면 문구만, 데이터는 원문 유지) ============ */
-const ZH = {"통합 대시보드": "综合仪表板", "Gate 현황": "Gate 现状", "사업구조": "业务结构", "사업·계약구조": "业务·合同结构", "실행관리": "执行管理", "인허가·중국산화": "注册·国产化", "생산라인": "生产线", "시장진입": "市场进入", "판매구조": "销售结构", "사업성": "经营判断", "사업성·리스크": "收益·风险", "관리": "管理", "데이터 연동": "数据同步", "출시 목표": "上市目标", "데이터": "数据", "로컬": "本地", "주차": "周次", "4단계 Gate 진척과 통과조건으로 사업 진행 여부를 판정한다": "以四阶段 Gate 进度与通过条件判断项目是否推进", "종합 판정": "综合判定", "종료": "截止", "경과": "已超", "일": "天", "필수 미충족": "必要条件未满足", "건": "项", "모든 Gate가 기준 내에 있습니다.": "所有 Gate 均在控制范围内。", "기한 경과 조건": "已逾期条件", "판정 코멘트 — 더블클릭해 입력": "判定备注 — 双击输入", "출시까지": "距上市", "목표": "目标", "계약 체결": "合同签署", "중국산 부품비율": "国产部件比例", "기준선 확정 필요": "基准线待确定", "가능": "可达", "기준": "基准", "NMPA 단계": "NMPA 阶段", "태스크 일정관리율": "任务排期率", "일정 미정": "未排期", "Gate 매핑": "Gate 映射", "노션 태스크 Gate 태그": "Notion 任务 Gate 标签", "노션 동기화": "Notion 同步", "수기값": "手工值", "Gate 타임라인": "Gate 时间轴", "충족률": "达成率", "위험": "风险", "신설 트랙": "新设轨道", "막대 채움 = 통과조건 충족률": "条形填充 = 通过条件达成率", "오늘": "今天", "출시": "上市", "기간 수정: 아래 표 더블클릭": "修改期间：双击下表", "gates 탭이 비어 있습니다": "gates 表为空", "이번 주 의사결정 필요": "本周待决事项", "의사결정 안건": "决策议题", "대상": "对象", "현황": "现状", "개선사항 (액션)": "改进措施 (行动)", "담당": "负责人", "기한": "期限", "상태": "状态", "전체": "全部", "Gate 통과조건": "Gate 通过条件", "박스 클릭 = 충족 토글 · 필수 태그 클릭 = 필수 토글": "点击方框 = 切换达成 · 点击必要标签 = 切换必要", "필수": "必要", "기한 없음": "无期限", "담당 없음": "无负责人", "조건 없음": "无条件", "명칭": "名称", "범위": "范围", "시작일": "开始日", "종료일": "结束日", "책임": "责任", "충족": "达成", "3자 구조, 계약 상태, 역할·승인권을 한 화면에서 고정한다": "在一个画面中固定三方结构、合同状态与角色·审批权", "3자 계약구조도": "三方合同结构图", "점선 = 미체결 · 계약 표 상태와 연동": "虚线 = 未签署 · 与合同表联动", "구조 판정": "结构判定", "진단": "诊断", "개선안": "改进方案", "브랜드 · 기술 · 핵심부품": "品牌 · 技术 · 核心部件", "OEM 생산 · 7F 라인": "OEM 生产 · 7F 产线", "닝보메가젠": "宁波美格真", "중국 유통 · 판매": "中国流通 · 销售", "대리상 → 치과 · 병원": "代理商 → 诊所 · 医院", "NMPA 등록증": "NMPA 注册证", "귀속 확정": "归属已定", "귀속 미정": "归属未定", "완제품 공급": "成品供应", "계약 현황": "合同现状", "계약": "合同", "당사자": "当事方", "핵심 조항": "核心条款", "쟁점": "争议点", "목표일": "目标日", "진척%": "进度%", "역할 · 승인권 매트릭스": "角色 · 审批权矩阵", "승인": "审批", "실행": "执行", "협의": "协商", "공유": "知会", "승인권": "审批权", "의사결정 항목": "决策事项", "메가젠 본사": "美格真总部", "합의": "已达成", "미결": "未决", "승인(A)이 1곳이 아닌 항목": "审批方(A)不唯一的事项", "인허가 · 중국산화": "注册 · 国产化", "NMPA 진행과 중국산 자격(부품 비율)을 사업 성립 요건으로 관리한다": "将 NMPA 进度与国产资格（部件比例）作为业务成立条件管理", "NMPA 등록 단계": "NMPA 注册阶段", "중국산 부품비율 트래커": "国产部件比例追踪", "현재": "当前", "원가 기준": "按成本", "국산화 가능 최대": "可国产化上限", "기준선": "基准线", "확정 필요": "待确定", "현재 중국 조달": "当前中国采购", "국산화 가능(후보)": "可国产化（候选）", "자격 기준선": "资格基准线", "경고": "警告", "국산화 후보를 모두 적용해도 기준선 미달": "即使全部候选国产化仍低于基准线", "핵심 판단": "核心判断", "사업 성립 요건": "业务成立条件", "시료 물류 이력": "样品物流记录", "차수": "批次", "예정일": "预定日", "결과": "结果", "원인": "原因", "BOM 국산화 계획": "BOM 国产化计划", "원가비중 합계": "成本占比合计", "100%가 아님": "不等于100%", "부품": "部件", "원가비중%": "成本占比%", "현재 조달": "当前采购", "중국조달": "中国采购", "국산화 대상": "国产化对象", "후보 공급사": "候选供应商", "불가": "不可", "미지정": "未指定", "합계": "合计", "COXO 7층 70평 라인 구축, 설비·교육, 파일럿 진척": "COXO 7层70坪产线建设、设备·培训、试产进度", "라인 구축": "产线建设", "설비": "设备", "라인 표 기준": "按产线表", "교육 이수": "培训完成", "명": "人", "BIOLASE 엔지니어 교육": "BIOLASE 工程师培训", "파일럿 생산": "试产", "대": "台", "→ KOL 제공 연결": "→ 衔接 KOL 投放", "7F 레이아웃 (70평)": "7F 布局 (70坪)", "구역": "区域", "파일럿 → 시장 연결": "试产 → 市场衔接", "설비 · 교육 · 품질 체크리스트": "设备 · 培训 · 质量清单", "라인": "产线", "항목": "项目", "구분": "类别", "투트랙 포지셔닝, 채널 경계, 가격을 계약 체결 전에 결정한다": "在签约前确定双轨定位、渠道边界与价格", "투트랙 포지셔닝 맵": "双轨定位图", "자사 두 점 사이 점선 = 카니발 구간": "自有两点间虚线 = 相互蚕食区间", "가정": "假设", "프리미엄 영역": "高端区域", "가격경쟁 영역": "价格竞争区域", "가격": "价格", "임상 레퍼런스 · 브랜드": "临床背书 · 品牌", "가격(0-100)": "价格(0-100)", "레퍼런스(0-100)": "背书(0-100)", "트랙별 역할": "各轨道角色", "수입산 트랙": "进口轨道", "중국산 트랙": "国产轨道", "채널 경계 설계": "渠道边界设计", "계약 반영 전 미결": "签约前未决", "전 채널 합의": "全渠道已达成", "채널": "渠道", "주력 트랙": "主力轨道", "판매 주체": "销售主体", "대리상 승인권": "代理商审批权", "가격 기준": "价格基准", "결정": "决定", "출시 전 판매 준비 로드맵": "上市前销售准备路线图", "사업성 · 리스크": "收益 · 风险", "시나리오별 물량과 리스크 레지스터로 투자 판단 근거를 관리한다": "以情景销量与风险登记管理投资判断依据", "보수": "保守", "공격": "积极", "연도별 판매 대수": "年度销量", "가정값": "假设值", "전체 대수": "总台数", "중국산 대수": "国产台数", "중국산 비중": "国产占比", "연도": "年度", "리스크 히트맵": "风险热力图", "번호 = 레지스터": "编号 = 登记表", "영향": "影响", "가능성": "可能性", "하": "低", "중": "中", "상": "高", "리스크 레지스터": "风险登记表", "리스크": "风险", "영향(1-3)": "影响(1-3)", "가능성(1-3)": "可能性(1-3)", "등급": "等级", "대응": "应对", "노션 = 실행 로그, 구글시트 = 원본 데이터, 웹앱 = 판정 화면": "Notion = 执行日志，Google 表格 = 原始数据，网页 = 判定画面", "구글시트 연결": "连接 Google 表格", "토큰": "令牌", "연결 저장 후 불러오기": "保存连接并读取", "지금 시트에 저장": "立即保存到表格", "연결 해제": "断开连接", "URL과 토큰은 이 브라우저에만 저장되고 HTML 파일에는 들어가지 않습니다. 편집 1.5초 후 자동으로 시트에 저장되며, 주차별 스냅샷이 _history 탭에 쌓입니다.": "URL 与令牌仅保存在本浏览器，不写入 HTML 文件。编辑 1.5 秒后自动保存到表格，并按周在 _history 表累积快照。", "엑셀 파일": "Excel 文件", "엑셀 가져오기": "导入 Excel", "엑셀 내보내기": "导出 Excel", "로컬 데이터 초기화": "清空本地数据", "bls_pm_data.xlsx 형식을 그대로 읽습니다. 가져오면 현재 화면 데이터를 덮어씁니다. 클라우드가 연결돼 있으면 가져온 내용이 시트에도 저장됩니다.": "按 bls_pm_data.xlsx 格式读取。导入会覆盖当前数据；若已连接云端，也会保存到表格。", "설정값": "设置值", "더블클릭 수정": "双击修改", "항목키": "键", "값": "值", "설명": "说明", "공란": "空", "시트 탭 구조": "表格结构", "탭": "表", "이름": "名称", "용도": "用途", "연결 화면": "对应画面", "행수": "行数", "열": "列", "데이터 없음": "无数据", "아직 데이터가 없습니다.": "尚无数据。", "bls_pm_data.xlsx를 가져오거나, 구글시트를 연결하세요.": "请导入 bls_pm_data.xlsx 或连接 Google 表格。", "BIOLASE 중국 OEM 프로젝트 판정 화면": "BIOLASE 中国 OEM 项目判定画面", "로컬 저장": "本地已存", "시트 저장됨": "表格已存", "동기화 중": "同步中", "오류": "错误", "시트 불러오기": "读取表格", "저장 대기": "等待保存", "시트 불러오는 중": "正在读取表格", "시트 저장 중": "正在保存表格", "엑셀 읽는 중": "正在读取 Excel", "연결 안 됨": "未连接", "토큰 불일치": "令牌不一致", "BLS PM 형식의 탭이 없습니다": "无 BLS PM 格式的表", "Apps Script URL 형식이 아닙니다": "不是 Apps Script URL 格式", "이 행을 삭제할까요?": "确定删除此行？", "이 브라우저의 로컬 데이터를 지웁니다. 시트 데이터는 그대로입니다.": "将清空本浏览器的本地数据，表格数据不变。", "행 삭제": "删除行", "행 추가": "添加行", "숨기기": "隐藏", "펼치기": "展开", "더블클릭해 입력": "双击输入", "긴급": "紧急", "지연": "延迟", "미체결": "未签", "충돌": "冲突", "보류": "搁置", "정체": "停滞", "미착수": "未启动", "결정 필요": "待决定", "연기": "延期", "협상중": "谈判中", "검토": "审核", "진행": "进行", "서명대기": "待签字", "샘플": "样品", "완료": "完成", "체결": "已签", "입고": "入库", "적용": "已应用", "예정": "计划", "자사": "自有", "경쟁": "竞品", "교육": "培训", "품질": "质量", "시트가 비어 있습니다. 현재 화면 데이터를 시트에 올릴까요?": "表格为空。是否将当前数据上传到表格？", "시트 연결됨": "表格已连接"};
+const ZH = {"통합 대시보드": "综合仪表板", "Gate 현황": "Gate 现状", "사업구조": "业务结构", "사업·계약구조": "业务·合同结构", "실행관리": "执行管理", "인허가·중국산화": "注册·国产化", "생산라인": "生产线", "시장진입": "市场进入", "판매구조": "销售结构", "사업성": "经营判断", "사업성·리스크": "收益·风险", "관리": "管理", "데이터 연동": "数据同步", "출시 목표": "上市目标", "데이터": "数据", "로컬": "本地", "주차": "周次", "4단계 Gate 진척과 통과조건으로 사업 진행 여부를 판정한다": "以四阶段 Gate 进度与通过条件判断项目是否推进", "종합 판정": "综合判定", "종료": "截止", "경과": "已超", "일": "天", "필수 미충족": "必要条件未满足", "건": "项", "모든 Gate가 기준 내에 있습니다.": "所有 Gate 均在控制范围内。", "기한 경과 조건": "已逾期条件", "판정 코멘트 — 더블클릭해 입력": "判定备注 — 双击输入", "출시까지": "距上市", "목표": "目标", "계약 체결": "合同签署", "중국산 부품비율": "国产部件比例", "기준선 확정 필요": "基准线待确定", "가능": "可达", "기준": "基准", "NMPA 단계": "NMPA 阶段", "태스크 일정관리율": "任务排期率", "일정 미정": "未排期", "Gate 매핑": "Gate 映射", "노션 태스크 Gate 태그": "Notion 任务 Gate 标签", "노션 동기화": "Notion 同步", "수기값": "手工值", "Gate 타임라인": "Gate 时间轴", "충족률": "达成率", "위험": "风险", "신설 트랙": "新设轨道", "막대 채움 = 통과조건 충족률": "条形填充 = 通过条件达成率", "오늘": "今天", "출시": "上市", "기간 수정: 아래 표 더블클릭": "修改期间：双击下表", "gates 탭이 비어 있습니다": "gates 表为空", "이번 주 의사결정 필요": "本周待决事项", "의사결정 안건": "决策议题", "대상": "对象", "현황": "现状", "개선사항 (액션)": "改进措施 (行动)", "담당": "负责人", "기한": "期限", "상태": "状态", "전체": "全部", "Gate 통과조건": "Gate 通过条件", "박스 클릭 = 충족 토글 · 필수 태그 클릭 = 필수 토글": "点击方框 = 切换达成 · 点击必要标签 = 切换必要", "필수": "必要", "기한 없음": "无期限", "담당 없음": "无负责人", "조건 없음": "无条件", "명칭": "名称", "범위": "范围", "시작일": "开始日", "종료일": "结束日", "책임": "责任", "충족": "达成", "3자 구조, 계약 상태, 역할·승인권을 한 화면에서 고정한다": "在一个画面中固定三方结构、合同状态与角色·审批权", "3자 계약구조도": "三方合同结构图", "점선 = 미체결 · 계약 표 상태와 연동": "虚线 = 未签署 · 与合同表联动", "구조 판정": "结构判定", "진단": "诊断", "개선안": "改进方案", "브랜드 · 기술 · 핵심부품": "品牌 · 技术 · 核心部件", "OEM 생산 · 7F 라인": "OEM 生产 · 7F 产线", "닝보메가젠": "宁波美格真", "중국 유통 · 판매": "中国流通 · 销售", "대리상 → 치과 · 병원": "代理商 → 诊所 · 医院", "NMPA 등록증": "NMPA 注册证", "귀속 확정": "归属已定", "귀속 미정": "归属未定", "완제품 공급": "成品供应", "계약 현황": "合同现状", "계약": "合同", "당사자": "当事方", "핵심 조항": "核心条款", "쟁점": "争议点", "목표일": "目标日", "진척%": "进度%", "역할 · 승인권 매트릭스": "角色 · 审批权矩阵", "승인": "审批", "실행": "执行", "협의": "协商", "공유": "知会", "승인권": "审批权", "의사결정 항목": "决策事项", "메가젠 본사": "美格真总部", "합의": "已达成", "미결": "未决", "승인(A)이 1곳이 아닌 항목": "审批方(A)不唯一的事项", "인허가 · 중국산화": "注册 · 国产化", "NMPA 진행과 중국산 자격(부품 비율)을 사업 성립 요건으로 관리한다": "将 NMPA 进度与国产资格（部件比例）作为业务成立条件管理", "NMPA 등록 단계": "NMPA 注册阶段", "중국산 부품비율 트래커": "国产部件比例追踪", "현재": "当前", "원가 기준": "按成本", "국산화 가능 최대": "可国产化上限", "기준선": "基准线", "확정 필요": "待确定", "현재 중국 조달": "当前中国采购", "국산화 가능(후보)": "可国产化（候选）", "자격 기준선": "资格基准线", "경고": "警告", "국산화 후보를 모두 적용해도 기준선 미달": "即使全部候选国产化仍低于基准线", "핵심 판단": "核心判断", "사업 성립 요건": "业务成立条件", "시료 물류 이력": "样品物流记录", "차수": "批次", "예정일": "预定日", "결과": "结果", "원인": "原因", "BOM 국산화 계획": "BOM 国产化计划", "원가비중 합계": "成本占比合计", "100%가 아님": "不等于100%", "부품": "部件", "원가비중%": "成本占比%", "현재 조달": "当前采购", "중국조달": "中国采购", "국산화 대상": "国产化对象", "후보 공급사": "候选供应商", "불가": "不可", "미지정": "未指定", "합계": "合计", "COXO 7층 70평 라인 구축, 설비·교육, 파일럿 진척": "COXO 7层70坪产线建设、设备·培训、试产进度", "라인 구축": "产线建设", "설비": "设备", "라인 표 기준": "按产线表", "교육 이수": "培训完成", "명": "人", "BIOLASE 엔지니어 교육": "BIOLASE 工程师培训", "파일럿 생산": "试产", "대": "台", "→ KOL 제공 연결": "→ 衔接 KOL 投放", "7F 레이아웃 (70평)": "7F 布局 (70坪)", "구역": "区域", "파일럿 → 시장 연결": "试产 → 市场衔接", "설비 · 교육 · 품질 체크리스트": "设备 · 培训 · 质量清单", "라인": "产线", "항목": "项目", "구분": "类别", "투트랙 포지셔닝, 채널 경계, 가격을 계약 체결 전에 결정한다": "在签约前确定双轨定位、渠道边界与价格", "투트랙 포지셔닝 맵": "双轨定位图", "자사 두 점 사이 점선 = 카니발 구간": "自有两点间虚线 = 相互蚕食区间", "가정": "假设", "프리미엄 영역": "高端区域", "가격경쟁 영역": "价格竞争区域", "가격": "价格", "임상 레퍼런스 · 브랜드": "临床背书 · 品牌", "가격(0-100)": "价格(0-100)", "레퍼런스(0-100)": "背书(0-100)", "트랙별 역할": "各轨道角色", "수입산 트랙": "进口轨道", "중국산 트랙": "国产轨道", "채널 경계 설계": "渠道边界设计", "계약 반영 전 미결": "签约前未决", "전 채널 합의": "全渠道已达成", "채널": "渠道", "주력 트랙": "主力轨道", "판매 주체": "销售主体", "대리상 승인권": "代理商审批权", "가격 기준": "价格基准", "결정": "决定", "출시 전 판매 준비 로드맵": "上市前销售准备路线图", "사업성 · 리스크": "收益 · 风险", "시나리오별 물량과 리스크 레지스터로 투자 판단 근거를 관리한다": "以情景销量与风险登记管理投资判断依据", "보수": "保守", "공격": "积极", "연도별 판매 대수": "年度销量", "가정값": "假设值", "전체 대수": "总台数", "중국산 대수": "国产台数", "중국산 비중": "国产占比", "연도": "年度", "리스크 히트맵": "风险热力图", "번호 = 레지스터": "编号 = 登记表", "영향": "影响", "가능성": "可能性", "하": "低", "중": "中", "상": "高", "리스크 레지스터": "风险登记表", "리스크": "风险", "영향(1-3)": "影响(1-3)", "가능성(1-3)": "可能性(1-3)", "등급": "等级", "대응": "应对", "노션 = 실행 로그, 구글시트 = 원본 데이터, 웹앱 = 판정 화면": "Notion = 执行日志，Google 表格 = 原始数据，网页 = 判定画面", "구글시트 연결": "连接 Google 表格", "토큰": "令牌", "연결 저장 후 불러오기": "保存连接并读取", "지금 시트에 저장": "立即保存到表格", "연결 해제": "断开连接", "URL과 토큰은 이 브라우저에만 저장되고 HTML 파일에는 들어가지 않습니다. 편집 1.5초 후 자동으로 시트에 저장되며, 주차별 스냅샷이 _history 탭에 쌓입니다.": "URL 与令牌仅保存在本浏览器，不写入 HTML 文件。编辑 1.5 秒后自动保存到表格，并按周在 _history 表累积快照。", "엑셀 파일": "Excel 文件", "엑셀 가져오기": "导入 Excel", "엑셀 내보내기": "导出 Excel", "로컬 데이터 초기화": "清空本地数据", "bls_pm_data.xlsx 형식을 그대로 읽습니다. 가져오면 현재 화면 데이터를 덮어씁니다. 클라우드가 연결돼 있으면 가져온 내용이 시트에도 저장됩니다.": "按 bls_pm_data.xlsx 格式读取。导入会覆盖当前数据；若已连接云端，也会保存到表格。", "설정값": "设置值", "더블클릭 수정": "双击修改", "항목키": "键", "값": "值", "설명": "说明", "공란": "空", "시트 탭 구조": "表格结构", "탭": "表", "이름": "名称", "용도": "用途", "연결 화면": "对应画面", "행수": "行数", "열": "列", "데이터 없음": "无数据", "아직 데이터가 없습니다.": "尚无数据。", "bls_pm_data.xlsx를 가져오거나, 구글시트를 연결하세요.": "请导入 bls_pm_data.xlsx 或连接 Google 表格。", "BIOLASE 중국 OEM 프로젝트 판정 화면": "BIOLASE 中国 OEM 项目判定画面", "로컬 저장": "本地已存", "시트 저장됨": "表格已存", "동기화 중": "同步中", "오류": "错误", "시트 불러오기": "读取表格", "저장 대기": "等待保存", "시트 불러오는 중": "正在读取表格", "시트 저장 중": "正在保存表格", "엑셀 읽는 중": "正在读取 Excel", "연결 안 됨": "未连接", "토큰 불일치": "令牌不一致", "BLS PM 형식의 탭이 없습니다": "无 BLS PM 格式的表", "Apps Script URL 형식이 아닙니다": "不是 Apps Script URL 格式", "이 행을 삭제할까요?": "确定删除此行？", "이 브라우저의 로컬 데이터를 지웁니다. 시트 데이터는 그대로입니다.": "将清空本浏览器的本地数据，表格数据不变。", "행 삭제": "删除行", "행 추가": "添加行", "숨기기": "隐藏", "펼치기": "展开", "더블클릭해 입력": "双击输入", "긴급": "紧急", "지연": "延迟", "미체결": "未签", "충돌": "冲突", "보류": "搁置", "정체": "停滞", "미착수": "未启动", "결정 필요": "待决定", "연기": "延期", "협상중": "谈判中", "검토": "审核", "진행": "进行", "서명대기": "待签字", "샘플": "样品", "완료": "完成", "체결": "已签", "입고": "入库", "적용": "已应用", "예정": "计划", "자사": "自有", "경쟁": "竞品", "교육": "培训", "품질": "质量", "시트가 비어 있습니다. 현재 화면 데이터를 시트에 올릴까요?": "表格为空。是否将当前数据上传到表格？", "시트 연결됨": "表格已连接", "통과조건": "通过条件", "의사결정": "决策", "사이드바 접기": "收起侧栏", "전체 펼치기": "全部展开", "전체 접기": "全部收起", "막대 채움 = 통과조건 충족률 · ◆ = 통과조건 기한": "条形填充 = 达成率 · ◆ = 条件期限", "정상 진행": "正常推进", "기간 경과": "期间已过", "최대": "上限", "미결 의사결정": "未决事项", "Gate 스코어카드": "Gate 计分卡", "신설": "新设", "정상": "正常", "일반 미충족": "一般未满足", "마감 · 필수조건": "截止 · 必要条件", "다가오는 마감 (60일)": "即将截止（60天）", "60일 내 마감 없음": "60天内无截止", "Gate별 필수조건 충족": "各 Gate 必要条件达成", "미충족": "未满足", "위험 Gate": "风险 Gate", "조건 충족": "条件达成", "필수 조건": "必要条件", "기한 경과": "已逾期", "상태 순 정렬": "按状态排序", "구조도": "结构图", "계약 편집": "合同编辑", "진척": "进度", "주체별 역할 분포": "各主体角色分布", "A 승인": "A 审批", "R 실행": "R 执行", "C 협의": "C 协商", "I 공유": "I 知会", "미결 항목은 계약 조항에 반영 필요": "未决事项需写入合同条款", "중국산 비율": "国产比例", "시료 물류": "样品物流", "현재 병목": "当前瓶颈", "중국 조달": "中国采购", "국산화 후보": "国产化候选", "국산화 불가": "不可国产化", "원가 구성 — 부품별 조달 상태": "成本构成 — 各部件采购状态", "기준선 대비": "对比基准线", "시료 입고 시도 이력": "样品入库尝试记录", "판단": "判断", "레이아웃": "布局", "체크리스트": "清单", "구축 진척률": "建设进度", "수정": "修改", "구분별 진행 상태": "各类别进度", "구역 상태": "区域状态", "운영 중": "运行中", "미비 · 지연": "未完 · 延迟", "평": "坪", "포지셔닝": "定位", "채널 경계": "渠道边界", "로드맵": "路线图", "프리미엄": "高端", "가성비": "性价比", "가격경쟁": "价格竞争", "고가·약레퍼런스": "高价·弱背书", "카니발 구간": "蚕食区间", "결정 현황": "决策现状", "계약 반영 필요": "需写入合同", "양 트랙": "双轨", "물량 시나리오": "销量情景", "리스크 매트릭스": "风险矩阵", "년 누계": "年累计", "연도별 판매 대수 — 시나리오 비교": "年度销量 — 情景对比", "트랙 구성": "轨道构成", "수입산": "进口", "중국산": "国产", "리스크 매트릭스 (영향 × 가능성)": "风险矩阵（影响 × 可能性）", "High 리스크": "高风险", "High 리스크 없음": "无高风险", "점수": "分数", "연결": "连接", "연결 오류": "连接错误", "로컬 모드": "本地模式"};
 const t = s => (UI.lang === 'zh' && ZH[s]) || s;
 
 /* ============ 공통 조각 ============ */
@@ -232,54 +333,116 @@ function taskStat() {
 }
 const riskLv = r => { const s = num(r.impact) * num(r.likelihood); return s >= 6 ? ['High', 'b-bad'] : s >= 3 ? ['Mid', 'b-warn'] : ['Low', 'b-ok']; };
 
+/* ============ 차트 헬퍼 (외부 라이브러리 없이 SVG) ============ */
+const C = { navy: '#1e2f5e', blue: '#2a51ab', mid: '#3d6cca', sky: '#5b8ce0', lite: '#9bc0f4', pale: '#dbe4f4', gray: '#cbd5e1', red: '#dc2626', amber: '#d97706', green: '#059669', track: '#eef2f7' };
+const STC = { 완료: C.green, 체결: C.green, 합의: C.green, 입고: C.green, 적용: C.green, 승인: C.green, 진행: C.navy, 서명대기: C.mid, 샘플: C.mid, 협상중: C.amber, 검토: C.amber, 결정: C.amber, '결정 필요': C.amber, 연기: C.amber, 예정: C.lite, 지연: C.red, 긴급: C.red, 미체결: C.red, 충돌: C.red, 쟁점: C.red, 보류: C.red, 정체: C.red, 미착수: C.red };
+function ring(pct, o = {}) {
+  const s = o.size || 64, w = o.stroke || 7, r = (s - w) / 2, c = 2 * Math.PI * r, p = Math.max(0, Math.min(100, pct || 0)), col = o.color || C.navy;
+  return `<svg class="ring" width="${s}" height="${s}" viewBox="0 0 ${s} ${s}"><circle cx="${s / 2}" cy="${s / 2}" r="${r}" fill="none" stroke="${o.track || C.track}" stroke-width="${w}"/>${p ? `<circle cx="${s / 2}" cy="${s / 2}" r="${r}" fill="none" stroke="${col}" stroke-width="${w}" stroke-dasharray="${c * p / 100} ${c}" transform="rotate(-90 ${s / 2} ${s / 2})"/>` : ''}<text x="50%" y="${o.sub ? '45%' : '52%'}" text-anchor="middle" dominant-baseline="middle" font-size="${o.fs || Math.round(s * .23)}" font-weight="800" fill="${o.tc || col}">${o.label !== undefined ? o.label : Math.round(p) + '%'}</text>${o.sub ? `<text x="50%" y="${s > 80 ? '67%' : '70%'}" text-anchor="middle" dominant-baseline="middle" font-size="${Math.max(10, Math.round(s * .12))}" fill="#64748b">${o.sub}</text>` : ''}</svg>`;
+}
+function donut(segs, o = {}) {
+  const s = o.size || 132, w = o.stroke || 18, r = (s - w) / 2, c = 2 * Math.PI * r, tot = segs.reduce((a, x) => a + x.v, 0) || 1;
+  let off = 0, h = `<svg class="ring" width="${s}" height="${s}" viewBox="0 0 ${s} ${s}"><circle cx="${s / 2}" cy="${s / 2}" r="${r}" fill="none" stroke="${C.track}" stroke-width="${w}"/>`;
+  segs.forEach(x => { if (!x.v) return; const L = c * x.v / tot; h += `<circle cx="${s / 2}" cy="${s / 2}" r="${r}" fill="none" stroke="${x.c}" stroke-width="${w}" stroke-dasharray="${L} ${c - L}" stroke-dashoffset="${-off}" transform="rotate(-90 ${s / 2} ${s / 2})"><title>${esc(x.l)} ${x.v}</title></circle>`; off += L; });
+  return h + `<text x="50%" y="45%" text-anchor="middle" dominant-baseline="middle" font-size="${o.fs || 24}" font-weight="800" fill="${o.tc || C.navy}">${o.label || ''}</text><text x="50%" y="64%" text-anchor="middle" dominant-baseline="middle" font-size="11" fill="#64748b">${o.sub || ''}</text></svg>`;
+}
+function stack(segs, o = {}) {
+  const tot = segs.reduce((a, x) => a + x.v, 0);
+  if (!tot) return `<div class="stk" style="height:${o.h || 18}px"></div>`;
+  return `<div class="stk" style="height:${o.h || 18}px">${segs.filter(x => x.v > 0).map(x => { const w = x.v / tot * 100; return `<i style="width:${w}%;background:${x.c};color:${x.tc || '#fff'}" title="${esc(x.l)} ${x.v}">${w >= (o.min || 10) ? (o.fmt ? o.fmt(x, w) : x.v) : ''}</i>`; }).join('')}</div>`;
+}
+const lg = items => `<div class="legend">${items.map(x => `<span><i style="background:${x[1]}${x[2] ? ';' + x[2] : ''}"></i>${t(x[0])}</span>`).join('')}</div>`;
+const dday = s => { const d = days(s); return d === null ? '' : d < 0 ? `<span class="dd over">D+${-d}</span>` : `<span class="dd ${d <= 30 ? 'near' : ''}">D-${d}</span>`; };
+function tabs(page, list) {
+  const cur = list.some(x => x[0] === (UI.tab || {})[page]) ? UI.tab[page] : list[0][0];
+  return { cur, html: `<div class="ui-tabs">${list.map(x => `<button class="ui-tab ${x[0] === cur ? 'on' : ''}" data-tab="${page}" data-v="${x[0]}">${t(x[1])}${x[2] ? `<span class="tn">${x[2]}</span>` : ''}</button>`).join('')}</div>` };
+}
+function kv(label, val, vis, sub, tone = '') { return `<div class="ui-kpi kv ${tone}"><div class="ui-kpi-l">${t(label)}</div><div class="kv-row"><div class="kv-v">${val}</div><div class="kv-vis">${vis || ''}</div></div><div class="ui-kpi-s">${sub || '&nbsp;'}</div></div>`; }
+const ib = (v, max, col) => `<div class="ib"><div class="ib-t"><i style="width:${max ? Math.min(100, num(v) / max * 100) : 0}%;background:${col || C.navy}"></i></div><span>${esc(v)}</span></div>`;
+
 /* ============ 메뉴 ============ */
 const MENU = [
-  ['통합 대시보드', [['p1', 'Gate 현황', () => DB.decisions.filter(d => d.state !== '완료').length]]],
-  ['사업구조', [['p2', '사업·계약구조', () => DB.contracts.filter(c => c.state !== '체결').length]]],
-  ['실행관리', [['p3', '인허가·중국산화', () => DB.nmpa.filter(n => n.state === '정체').length + DB.samples.filter(s => s.result === '보류').length], ['p4', '생산라인', () => DB.line.filter(l => l.state === '지연' || l.state === '미착수').length]]],
-  ['시장진입', [['p5', '판매구조', () => DB.channels.filter(c => c.decision && c.decision !== '합의').length]]],
-  ['사업성', [['p6', '사업성·리스크', () => DB.risks.filter(r => riskLv(r)[0] === 'High').length]]],
-  ['관리', [['p7', '데이터 연동', () => 0]]],
+  ['통합 대시보드', 'g1', [['p1', 'Gate 현황', () => DB.decisions.filter(d => d.state !== '완료').length]]],
+  ['사업구조', 'g2', [['p2', '사업·계약구조', () => DB.contracts.filter(c => c.state !== '체결').length]]],
+  ['실행관리', 'g3', [['p3', '인허가·중국산화', () => DB.nmpa.filter(n => n.state === '정체').length + DB.samples.filter(s => s.result === '보류').length], ['p4', '생산라인', () => DB.line.filter(l => l.state === '지연' || l.state === '미착수').length]]],
+  ['시장진입', 'g4', [['p5', '판매구조', () => DB.channels.filter(c => c.decision && c.decision !== '합의').length]]],
+  ['사업성', 'g5', [['p6', '사업성·리스크', () => DB.risks.filter(r => riskLv(r)[0] === 'High').length]]],
+  ['관리', 'g6', [['p7', '데이터 연동', () => 0]]],
 ];
 function renderSide() {
-  const c = jget(LS_CLOUD) || {};
-  document.getElementById('side').innerHTML = `<div class="side-hd"><div class="logo">B</div><div><div class="side-t1">BLS PM</div><div class="side-t3">BIOLASE · CHINA</div></div></div>
-  <div style="padding:6px 8px;flex:1">${MENU.map(g => `<div class="side-g"><i></i>${t(g[0])}</div>` + g[1].map(m => { const n = DB.gates.length ? m[2]() : 0; return `<button class="side-m ${UI.page === m[0] ? 'on' : ''}" data-page="${m[0]}"><span>${t(m[1])}</span>${n ? `<span class="n">${n}</span>` : ''}</button>`; }).join('')).join('')}</div>
+  const c = jget(LS_CLOUD) || {}, has = DB.gates.length;
+  UI.sg = UI.sg || {};
+  document.getElementById('side').innerHTML = `<div class="side-hd"><div class="logo">B</div><div style="flex:1;min-width:0"><div class="side-t1">BLS PM</div><div class="side-t3">BIOLASE · CHINA</div></div><button class="side-x" data-act="sideHide" title="${t('사이드바 접기')}">«</button></div>
+  <div class="side-tools"><button data-act="sgAll" data-v="1">${t('전체 펼치기')}</button><button data-act="sgAll" data-v="0">${t('전체 접기')}</button></div>
+  <div style="padding:2px 8px;flex:1">${MENU.map(g => {
+    const closed = UI.sg[g[1]], sum = has ? g[2].reduce((a, m) => a + m[2](), 0) : 0, act = g[2].some(m => m[0] === UI.page);
+    return `<button class="side-g ${closed ? 'closed' : ''} ${act ? 'act' : ''}" data-sg="${g[1]}"><i></i><span>${t(g[0])}</span>${closed && sum ? `<span class="n">${sum}</span>` : ''}<span class="sgc">▾</span></button>` +
+      (closed ? '' : g[2].map(m => { const n = has ? m[2]() : 0; return `<button class="side-m ${UI.page === m[0] ? 'on' : ''}" data-page="${m[0]}"><span>${t(m[1])}</span>${n ? `<span class="n">${n}</span>` : ''}</button>`; }).join(''));
+  }).join('')}</div>
   <div class="side-info">${t('출시 목표')} <b>${fmtD(S('launch_date')) || '—'}</b><br>${t('데이터')} <b>${c.url ? 'Google Sheet' : t('로컬')}</b><br>${t('주차')} <b>${TODAY.getFullYear()}-${isoWeek(TODAY)}</b></div>`;
+}
+
+/* ============ 공통 계산: 다가오는 마감 ============ */
+function upcoming(win) {
+  const L = [];
+  DB.checks.forEach(c => { if (!yes(c.done) && pd(c.due)) L.push({ d: c.due, txt: c.item, sub: `${c.gate} · ${t('통과조건')}`, own: c.owner, crit: yes(c.critical) }); });
+  DB.decisions.forEach(c => { if (c.state !== '완료' && pd(c.due)) L.push({ d: c.due, txt: c.target, sub: `${c.gate} · ${t('의사결정')}`, own: c.owner, crit: c.state === '긴급' }); });
+  DB.contracts.forEach(c => { if (c.state !== '체결' && pd(c.due)) L.push({ d: c.due, txt: c.name, sub: t('계약'), own: c.owner, crit: true }); });
+  DB.line.forEach(c => { if (c.state !== '완료' && pd(c.due)) L.push({ d: c.due, txt: c.item, sub: t('생산라인'), own: c.owner }); });
+  return L.filter(x => days(x.d) <= win).sort((a, b) => pd(a.d) - pd(b.d));
 }
 
 /* ============ P1 Gate 현황 ============ */
 function pageGate() {
-  const gs = gateStats(), V = verdict(), T = taskStat(), cn = cnStat();
-  const dd = days(S('launch_date'));
-  const signed = DB.contracts.filter(c => c.state === '체결').length;
-  const cur = DB.nmpa.find(n => n.state === '정체') || DB.nmpa.find(n => n.state === '진행');
+  const gs = gateStats(), V = verdict();
+  const critOpen = gs.filter(s => !s.prop).reduce((a, s) => a + s.crit.length, 0);
+  const decOpen = DB.decisions.filter(d => d.state !== '완료').length;
+  const TB = tabs('p1', [['ov', '종합 판정'], ['tl', 'Gate 타임라인'], ['chk', '통과조건', critOpen], ['dec', '의사결정', decOpen]]);
+  let h = head('Gate 현황', '4단계 Gate 진척과 통과조건으로 사업 진행 여부를 판정한다') + TB.html;
+  if (TB.cur === 'ov') h += gateOverview(gs, V);
+  if (TB.cur === 'tl') h += card('gantt', t('Gate 타임라인') + `<span class="tag-s">${t('막대 채움 = 통과조건 충족률 · ◆ = 통과조건 기한')}</span>`, gantt(gs));
+  if (TB.cur === 'chk') h += gateChecks(gs);
+  if (TB.cur === 'dec') h += gateDecisions();
+  return h;
+}
+function gateOverview(gs, V) {
+  const T = taskStat(), cn = cnStat(), dd = days(S('launch_date')), L = pd(S('launch_date'));
+  const st0 = DB.gates.map(g => pd(g.start)).filter(Boolean), P0 = st0.length ? new Date(Math.min(...st0)) : TODAY;
+  const el = L ? Math.max(0, Math.min(100, (TODAY - P0) / (L - P0) * 100)) : 0;
   const VC = { 'NO-GO': '#b91c1c', HOLD: '#d97706', GO: '#059669' }[V.v];
-  const gIds = DB.gates.filter(g => !/^S/i.test(g.id)).map(g => [g.id, g.id]);
-  let h = head('Gate 현황', '4단계 Gate 진척과 통과조건으로 사업 진행 여부를 판정한다', seg('gf', [['all', '전체']].concat(gIds), UI.gf));
-  h += `<div class="verdict" style="border-color:${VC}40"><div class="vl" style="background:${VC}"><b>${V.v}</b><span>${t('종합 판정')} · ${isoWeek(TODAY)}</span></div><div class="vr">
-    ${V.list.length ? '<ul>' + V.list.map(s => `<li><b>${esc(s.g.id)} ${esc(s.g.name)}</b> — ${t('종료')} ${s.dEnd < 0 ? `<b style="color:#b91c1c">${t('경과')} ${-s.dEnd}${t('일')}</b>` : 'D-' + s.dEnd} · ${t('필수 미충족')} ${s.crit.length}${t('건')}: ${s.crit.slice(0, 3).map(c => esc(c.item)).join(', ')}${s.crit.length > 3 ? ' …' : ''}</li>`).join('') + '</ul>' : `<div>${t('모든 Gate가 기준 내에 있습니다.')}</div>`}
-    ${V.overCnt ? `<div style="color:#b91c1c;font-weight:700">${t('기한 경과 조건')} ${V.overCnt}${t('건')}</div>` : ''}
-    <div class="ed" ${atk('notes', 'verdict_note', 'text')}>${md(NT('verdict_note')) || '<span style="color:#94a3b8">' + t('판정 코멘트 — 더블클릭해 입력') + '</span>'}</div></div></div>`;
-  h += `<div class="grid g6">
-    ${kpi('출시까지', dd === null ? '—' : (dd >= 0 ? 'D-' + dd : 'D+' + (-dd)), '', t('목표') + ' ' + fmtD(S('launch_date')), dd !== null && dd < 0 ? 'alert' : '')}
-    ${kpi('계약 체결', signed, '/ ' + DB.contracts.length + t('건'), DB.contracts.map(c => esc(c.name.replace(/^[①②③④⑤]\s*/, ''))).join(' · '), signed < DB.contracts.length ? 'alert' : 'okk')}
-    ${kpi('중국산 부품비율', cn.now, '%', cn.th === null ? t('기준선 확정 필요') + ' · ' + t('가능') + ' ' + cn.pot + '%' : t('기준') + ' ' + cn.th + '%', cn.th === null || cn.now < cn.th ? 'alert' : 'okk')}
-    ${kpi('NMPA 단계', cur ? esc(cur.step) : '—', '', cur ? esc(cur.desc) : '', cur && cur.state === '정체' ? 'alert' : 'warnk').replace('ui-kpi-v"', 'ui-kpi-v" style="font-size:17px"')}
-    ${kpi('태스크 일정관리율', T.n ? Math.round((T.n - T.nodate) / T.n * 100) : 0, '%', `${T.n}${t('건')} · ${t('일정 미정')} ${T.nodate}${t('건')} (${T.src})`, T.nodate ? 'warnk' : 'okk')}
-    ${kpi('Gate 매핑', T.mapped, '/ ' + T.n, t('노션 태스크 Gate 태그'), T.n && T.mapped / T.n < .5 ? 'alert' : 'okk')}
+  let h = `<div class="hero"><div class="hero-v" style="background:${VC}"><div class="hv-l">${t('종합 판정')} · ${isoWeek(TODAY)}</div><div class="hv-b">${V.v}</div><div class="hv-s">${V.list.length ? V.list.map(s => esc(s.g.id)).join(' · ') + ' ' + t('위험') : t('정상 진행')}</div></div>
+    <div class="hero-r">${V.list.length ? V.list.map(s => `<div class="hr-i"><span class="b ${s.st === 'fail' ? 'b-bad' : 'b-risk'}">${esc(s.g.id)}</span><div><b>${esc(s.g.name)}</b> — ${t('종료')} ${s.dEnd < 0 ? `<b style="color:#b91c1c">${t('경과')} ${-s.dEnd}${t('일')}</b>` : 'D-' + s.dEnd} · ${t('필수 미충족')} <b style="color:#b91c1c">${s.crit.length}${t('건')}</b><div class="hr-s">${s.crit.slice(0, 4).map(c => esc(c.item)).join(' / ')}</div></div></div>`).join('') : `<div class="hr-i">${t('모든 Gate가 기준 내에 있습니다.')}</div>`}
+    ${V.overCnt ? `<div class="hr-over">${t('기한 경과 조건')} ${V.overCnt}${t('건')}</div>` : ''}
+    <div class="hr-note ed" ${atk('notes', 'verdict_note', 'text')}>${md(NT('verdict_note')) || '<span style="color:#94a3b8">' + t('판정 코멘트 — 더블클릭해 입력') + '</span>'}</div></div>
+    <div class="hero-d">${ring(el, { size: 104, stroke: 10, color: C.navy, label: dd === null ? '—' : dd >= 0 ? 'D-' + dd : 'D+' + (-dd), fs: 19, sub: t('기간 경과') + ' ' + Math.round(el) + '%' })}<div class="hd-s">${t('출시')} ${fmtD(S('launch_date'))}</div></div></div>`;
+  const signed = DB.contracts.filter(c => c.state === '체결').length;
+  const pipsH = `<div class="pips">${DB.contracts.map(c => `<i style="background:${STC[c.state] || C.gray}" title="${esc(c.name)} · ${esc(c.state)}"></i>`).join('')}</div>`;
+  const gauge = `<div class="mg"><div class="gauge sm"><div class="fp" style="width:${cn.pot}%"></div><div class="fc" style="width:${cn.now}%"></div>${cn.th !== null ? `<div class="tg" style="left:${Math.min(cn.th, 100)}%"></div>` : ''}</div></div>`;
+  const ci = DB.nmpa.findIndex(n => n.state === '정체' || n.state === '진행'), cur = DB.nmpa[ci];
+  const dots = `<div class="mdots">${DB.nmpa.map((n, i) => `<i style="background:${n.state === '완료' ? C.navy : i === ci ? (n.state === '정체' ? C.red : C.amber) : C.gray}" title="${esc(n.step)}"></i>`).join('')}</div>`;
+  const decS = ['긴급', '지연', '결정', '진행', '완료'].map(s => ({ l: s, v: DB.decisions.filter(d => d.state === s).length, c: STC[s] }));
+  const sched = T.n ? Math.round((T.n - T.nodate) / T.n * 100) : 0, map = T.n ? Math.round(T.mapped / T.n * 100) : 0;
+  h += `<div class="grid g6" style="margin-top:12px">
+    ${kv('계약 체결', `${signed}<small>/${DB.contracts.length}</small>`, pipsH, DB.contracts.map(c => esc(String(c.name).replace(/^[①②③④⑤]\s*/, '')) + ' ' + esc(t(c.state))).join(' · '), signed < DB.contracts.length ? 'alert' : 'okk')}
+    ${kv('중국산 부품비율', `${cn.now}<small>%</small>`, gauge, cn.th === null ? t('기준선 확정 필요') + ' · ' + t('최대') + ' ' + cn.pot + '%' : t('기준') + ' ' + cn.th + '% · ' + t('최대') + ' ' + cn.pot + '%', cn.th === null || cn.now < cn.th ? 'alert' : 'okk')}
+    ${kv('NMPA 단계', `<span style="font-size:16px">${cur ? esc(cur.step) : '—'}</span>`, dots, cur ? esc(cur.desc) : '', cur && cur.state === '정체' ? 'alert' : 'warnk')}
+    ${kv('태스크 일정관리율', `${sched}<small>%</small>`, ring(sched, { size: 46, stroke: 6, color: sched < 80 ? C.amber : C.green, label: '' }), `${T.n}${t('건')} · ${t('일정 미정')} ${T.nodate}${t('건')} (${T.src})`, sched < 80 ? 'warnk' : 'okk')}
+    ${kv('Gate 매핑', `${T.mapped}<small>/${T.n}</small>`, ring(map, { size: 46, stroke: 6, color: map < 50 ? C.red : C.green, label: '' }), t('노션 태스크 Gate 태그'), map < 50 ? 'alert' : 'okk')}
+    ${kv('미결 의사결정', `${DB.decisions.filter(d => d.state !== '완료').length}<small>${t('건')}</small>`, `<div style="width:92px">${stack(decS, { h: 12, min: 101 })}</div>`, decS.filter(x => x.v).map(x => t(x.l) + ' ' + x.v).join(' · '), decS[0].v ? 'alert' : '')}
   </div>`;
-  h += sec(1, 'Gate 타임라인', `<span class="legend" style="margin:0"><span><i style="background:#1e2f5e"></i>${t('충족률')}</span><span><i style="background:#dc2626"></i>${t('위험')}</span><span><i style="background:#fde68a;outline:1px dashed #d97706"></i>${t('신설 트랙')}</span></span>`);
-  h += card('gantt', t('Gate 타임라인') + `<span class="tag-s">${t('막대 채움 = 통과조건 충족률')}</span>`, gantt(gs));
-  const dec = DB.decisions.map((d, i) => [d, i]).filter(x => UI.gf === 'all' || String(x[0].gate).indexOf(UI.gf) >= 0);
-  h += sec(2, '이번 주 의사결정 필요');
-  h += card('dec', t('의사결정 안건') + ` <span class="tag-s">${dec.length}${t('건')}</span>`, `<div class="tblwrap"><table class="ui-tbl">${TH([['No', 'width:36px'], ['대상', 'width:100px'], ['Gate', 'width:60px'], '현황', '개선사항 (액션)', ['담당', 'width:84px'], ['기한', 'width:80px'], ['상태', 'width:70px']])}<tbody>
-    ${dec.map((x, n) => { const d = x[0], i = x[1], dd = days(d.due); return `<tr><td class="ctr">${n + 1}</td>${TD('decisions', i, 'target', 'lbl')}${TD('decisions', i, 'gate', 'ctr')}${TD('decisions', i, 'status')}${TD('decisions', i, 'action')}${TD('decisions', i, 'owner', 'ctr')}${TD('decisions', i, 'due', 'ctr nw', `<span class="due ${dd !== null && dd < 0 && d.state !== '완료' ? 'over' : ''}" style="font-size:12px">${fmtD(d.due)}</span>`)}${TD('decisions', i, 'state', 'ctr', badge(d.state))}${DEL('decisions', i)}</tr>`; }).join('')}
-    </tbody></table></div>`, ADD('decisions', { gate: UI.gf === 'all' ? '' : UI.gf, state: '결정' }), true);
-  h += sec(3, 'Gate 통과조건', `<span class="hint">${t('박스 클릭 = 충족 토글 · 필수 태그 클릭 = 필수 토글')}</span>`);
-  h += `<div class="grid g4">${gs.filter(s => !s.prop && (UI.gf === 'all' || s.g.id === UI.gf)).map(s => card('chk_' + s.g.id, `${esc(s.g.id)} ${esc(s.g.name)}`,
-    s.cs.map(c => { const i = DB.checks.indexOf(c), dd = days(c.due); return `<div class="chk"><span class="bx ${yes(c.done) ? 'on' : ''}" data-tog="checks" data-i="${i}" data-f="done">${yes(c.done) ? '✓' : ''}</span><span class="txt"><span class="ed" ${at('checks', i, 'item')}>${esc(c.item)}</span><span class="crit ${yes(c.critical) ? '' : 'off'}" data-tog="checks" data-i="${i}" data-f="critical">${t('필수')}</span><br><span class="due ed ${dd !== null && dd < 0 && !yes(c.done) ? 'over' : ''}" ${at('checks', i, 'due')}>${fmtD(c.due) || t('기한 없음')}</span> <span class="due ed" ${at('checks', i, 'owner')}>${esc(c.owner) || t('담당 없음')}</span></span><button class="del" data-del="checks" data-i="${i}">×</button></div>`; }).join('') + `<div style="margin-top:8px">${ADD('checks', { gate: s.g.id, critical: 'N', done: 'N' })}</div>`,
-    `<span class="b ${s.done === s.total && s.total ? 'b-ok' : s.st === 'fail' || s.st === 'risk' ? 'b-bad' : s.done ? 'b-warn' : 'b-gray'}">${s.done}/${s.total}</span>`)).join('')}</div>`;
+  h += sec(1, 'Gate 스코어카드');
+  h += `<div class="grid g5">${gs.map(s => {
+    const col = s.prop ? C.amber : s.st === 'ok' ? C.navy : C.red;
+    const critT = s.cs.filter(c => yes(c.critical)).length;
+    return `<div class="gcard ${s.prop ? 'prop' : 'st-' + s.st}"><div class="gc-top">${ring(s.pct, { size: 60, stroke: 7, color: col, label: s.prop || !s.total ? '—' : s.pct + '%', fs: 14 })}<div style="min-width:0"><div class="gc-id">${esc(s.g.id)} <span class="b ${s.prop ? 'b-warn' : s.st === 'fail' ? 'b-bad' : s.st === 'risk' ? 'b-risk' : 'b-ok'}">${t(s.prop ? '신설' : s.st === 'fail' ? '경과' : s.st === 'risk' ? '위험' : '정상')}</span></div><div class="gc-nm">${esc(s.g.name)}</div><div class="gc-d">${fmtD(s.g.end)} ${dday(s.g.end)}</div></div></div>
+      ${s.total ? `<div class="gc-bar">${stack([{ l: t('충족'), v: s.done, c: C.green }, { l: t('필수 미충족'), v: s.crit.length, c: C.red }, { l: t('일반 미충족'), v: s.total - s.done - s.crit.length, c: C.gray, tc: '#475569' }], { h: 14, min: 12 })}</div><div class="gc-cap">${t('필수')} ${critT - s.crit.length}/${critT} · ${t('전체')} ${s.done}/${s.total}</div>` : `<div class="gc-cap">${esc(s.g.sub)}</div>`}
+      <div class="gc-list">${s.crit.slice(0, 3).map(c => `<div><i></i>${esc(c.item)}</div>`).join('')}</div></div>`;
+  }).join('')}</div>`;
+  const up = upcoming(60);
+  const bars = gs.filter(s => !s.prop && s.total).map(s => { const ct = s.cs.filter(c => yes(c.critical)).length; return `<div class="hb"><div class="hb-l">${esc(s.g.id)}</div><div class="hb-b">${stack([{ l: t('충족'), v: ct - s.crit.length, c: C.green }, { l: t('미충족'), v: s.crit.length, c: C.red }], { h: 18, min: 8 })}</div><div class="hb-v">${ct - s.crit.length}/${ct}</div></div>`; }).join('');
+  h += sec(2, '마감 · 필수조건');
+  h += `<div class="grid g-73">${card('up', t('다가오는 마감 (60일)') + ` <span class="tag-s">${up.length}${t('건')}</span>`, up.length ? `<div class="dl">${up.slice(0, 10).map(x => { const d = days(x.d); return `<div class="dl-i ${d < 0 ? 'over' : d <= 14 ? 'near' : ''}"><div class="dl-d"><b>${fmtD(x.d).slice(3)}</b>${dday(x.d)}</div><div class="dl-t">${x.crit ? '<span class="b b-bad" style="margin-right:5px">' + t('필수') + '</span>' : ''}${esc(x.txt)}<small>${esc(x.sub)} · ${esc(x.own || t('담당 없음'))}</small></div></div>`; }).join('')}</div>` : `<div class="hint">${t('60일 내 마감 없음')}</div>`)}
+    ${card('crit', t('Gate별 필수조건 충족'), bars + lg([['충족', C.green], ['미충족', C.red]]))}</div>`;
   return h;
 }
 function gantt(gs) {
@@ -287,147 +450,225 @@ function gantt(gs) {
   const L = pd(S('launch_date'));
   const ds = gs.flatMap(s => [pd(s.g.start), pd(s.g.end)]).concat([TODAY, L]).filter(Boolean);
   let a = new Date(Math.min(...ds)), b = new Date(Math.max(...ds));
-  a = new Date(a.getFullYear(), a.getMonth() < 6 ? 0 : 6, 1); b = new Date(b.getFullYear(), b.getMonth() + 3, 1);
+  a = new Date(a.getFullYear(), Math.floor(a.getMonth() / 3) * 3, 1); b = new Date(b.getFullYear(), Math.floor(b.getMonth() / 3) * 3 + 3, 1);
   const P = d => ((d - a) / (b - a) * 100);
-  const ticks = []; for (let d = new Date(a); d <= b; d = new Date(d.getFullYear(), d.getMonth() + 6, 1)) ticks.push(d);
-  let h = `<div class="g-axis"><div></div><div class="g-ticks">${ticks.map(d => `<span style="left:${P(d)}%">${d.getFullYear()}.${String(d.getMonth() + 1).padStart(2, '0')}</span>`).join('')}</div><div></div></div><div style="position:relative">`;
-  gs.forEach(s => { const st = pd(s.g.start), en = pd(s.g.end); if (!st || !en) return; const l = P(st), w = Math.max(P(en) - l, .5);
-    h += `<div class="g-row"><div class="g-lbl">${esc(s.g.id)} ${esc(s.g.name)}<small>${esc(s.g.sub)}</small></div><div class="g-track"><div class="g-bar ${s.prop ? 'prop' : s.st}" style="left:${l}%;width:${w}%" title="${esc(s.g.start)} ~ ${esc(s.g.end)}"><i style="width:${s.prop ? 0 : s.pct}%"></i></div></div><div class="g-pct" style="color:${s.st === 'ok' ? '#1e2f5e' : '#dc2626'}">${s.prop || !s.total ? '—' : s.pct + '%'}</div></div>`; });
-  h += `<div class="g-ovl" style="top:0"><div class="g-today" style="left:${P(TODAY)}%"><span>${t('오늘')}</span></div>${L ? `<div class="g-launch" style="left:${P(L)}%"><span>${t('출시')}</span></div>` : ''}</div></div>`;
-  h += `<div class="hint" style="margin-top:20px">${t('기간 수정: 아래 표 더블클릭')}</div><div class="tblwrap" style="margin-top:4px"><table class="ui-tbl">${TH(['Gate', '명칭', '범위', '시작일', '종료일', '책임', '충족'])}<tbody>${gs.map(s => { const i = DB.gates.indexOf(s.g); return `<tr>${TD('gates', i, 'id', 'ctr lbl')}${TD('gates', i, 'name')}${TD('gates', i, 'sub')}${TD('gates', i, 'start', 'ctr nw')}${TD('gates', i, 'end', 'ctr nw')}${TD('gates', i, 'owner', 'ctr')}<td class="ctr">${s.done}/${s.total}</td>${DEL('gates', i)}</tr>`; }).join('')}</tbody></table></div><div style="margin-top:6px">${ADD('gates', {})}</div>`;
+  const months = []; for (let d = new Date(a); d < b; d = new Date(d.getFullYear(), d.getMonth() + 1, 1)) months.push(d);
+  const grid = months.map(m => `<i class="gl ${m.getMonth() % 3 === 0 ? 'q' : ''} ${m.getMonth() === 0 ? 'y' : ''}" style="left:${P(m)}%"></i>`).join('') + `<i class="gl-today" style="left:${P(TODAY)}%"></i>` + (L ? `<i class="gl-launch" style="left:${P(L)}%"></i>` : '');
+  const years = {}; months.forEach(m => { const y = m.getFullYear(); years[y] = years[y] || [m, m]; years[y][1] = m; });
+  let hd = `<div class="gt-row gt-hd"><div></div><div class="gt-tr">${Object.keys(years).map(y => { const s = P(years[y][0]), e = P(new Date(+y, years[y][1].getMonth() + 1, 1)); return `<span class="gt-y" style="left:${s}%;width:${e - s}%">${y}</span>`; }).join('')}</div><div></div></div>
+    <div class="gt-row gt-hd2"><div></div><div class="gt-tr">${months.filter(m => m.getMonth() % 3 === 0).map(m => `<span class="gt-q" style="left:${P(m)}%;width:${P(new Date(m.getFullYear(), m.getMonth() + 3, 1)) - P(m)}%">Q${m.getMonth() / 3 + 1}</span>`).join('')}<span class="gt-tag" style="left:${P(TODAY)}%;color:#e11d48">▼ ${t('오늘')}</span>${L ? `<span class="gt-tag" style="left:${P(L)}%;color:#1e2f5e">▼ ${t('출시')}</span>` : ''}</div><div></div></div>`;
+  let rows = gs.map(s => {
+    const st = pd(s.g.start), en = pd(s.g.end); if (!st || !en) return '';
+    const l = P(st), w = Math.max(P(en) - l, .6);
+    const ms = s.cs.filter(c => pd(c.due)).map(c => { const dn = yes(c.done), ov = !dn && days(c.due) < 0; return `<span class="ms ${dn ? 'dn' : ov ? 'ov' : yes(c.critical) ? 'cr' : ''}" style="left:${P(pd(c.due))}%" title="${esc(c.item)} · ${esc(c.due)}${dn ? ' ✓' : ''}"></span>`; }).join('');
+    return `<div class="gt-row"><div class="g-lbl">${esc(s.g.id)} ${esc(s.g.name)}<small>${esc(s.g.sub)}</small></div><div class="gt-tr">${grid}<div class="g-bar ${s.prop ? 'prop' : s.st}" style="left:${l}%;width:${w}%" title="${esc(s.g.start)} ~ ${esc(s.g.end)}"><i style="width:${s.prop ? 0 : s.pct}%"></i></div>${ms}</div><div class="g-pct" style="color:${s.st === 'ok' ? '#1e2f5e' : '#dc2626'}">${s.prop || !s.total ? '—' : s.pct + '%'}</div></div>`;
+  }).join('');
+  let h = `<div class="gt">${hd}${rows}</div>` + lg([['충족률', C.navy], ['위험 Gate', C.red], ['신설 트랙', '#fde68a', 'outline:1px dashed #d97706'], ['조건 충족', C.navy, 'transform:rotate(45deg)'], ['필수 조건', '#fff', 'outline:2px solid #1e2f5e;transform:rotate(45deg)'], ['기한 경과', C.red, 'transform:rotate(45deg)']]);
+  h += `<div class="hint" style="margin-top:14px">${t('기간 수정: 아래 표 더블클릭')}</div><div class="tblwrap" style="margin-top:4px"><table class="ui-tbl">${TH(['Gate', '명칭', '범위', '시작일', '종료일', '책임', '충족'])}<tbody>${gs.map(s => { const i = DB.gates.indexOf(s.g); return `<tr>${TD('gates', i, 'id', 'ctr lbl')}${TD('gates', i, 'name')}${TD('gates', i, 'sub')}${TD('gates', i, 'start', 'ctr nw')}${TD('gates', i, 'end', 'ctr nw')}${TD('gates', i, 'owner', 'ctr')}<td class="ctr">${s.done}/${s.total}</td>${DEL('gates', i)}</tr>`; }).join('')}</tbody></table></div><div style="margin-top:6px">${ADD('gates', {})}</div>`;
+  return h;
+}
+function gateChecks(gs) {
+  const gIds = DB.gates.filter(g => !/^S/i.test(g.id)).map(g => [g.id, g.id]);
+  let h = `<div class="bar-row">${seg('gf', [['all', '전체']].concat(gIds), UI.gf)}<span class="hint">${t('박스 클릭 = 충족 토글 · 필수 태그 클릭 = 필수 토글')}</span></div>`;
+  h += `<div class="grid g4">${gs.filter(s => !s.prop && (UI.gf === 'all' || s.g.id === UI.gf)).map(s => card('chk_' + s.g.id, `${esc(s.g.id)} ${esc(s.g.name)}`,
+    `<div style="margin-bottom:8px">${stack([{ l: t('충족'), v: s.done, c: C.green }, { l: t('필수 미충족'), v: s.crit.length, c: C.red }, { l: t('일반 미충족'), v: s.total - s.done - s.crit.length, c: C.gray, tc: '#475569' }], { h: 8, min: 101 })}<div class="gc-cap" style="margin-top:4px">${t('종료')} ${fmtD(s.g.end)} ${dday(s.g.end)}</div></div>` +
+    s.cs.map(c => { const i = DB.checks.indexOf(c), dd = days(c.due); return `<div class="chk"><span class="bx ${yes(c.done) ? 'on' : ''}" data-tog="checks" data-i="${i}" data-f="done">${yes(c.done) ? '✓' : ''}</span><span class="txt"><span class="ed ${yes(c.done) ? 'done' : ''}" ${at('checks', i, 'item')}>${esc(c.item)}</span><span class="crit ${yes(c.critical) ? '' : 'off'}" data-tog="checks" data-i="${i}" data-f="critical">${t('필수')}</span><br><span class="due ed ${dd !== null && dd < 0 && !yes(c.done) ? 'over' : ''}" ${at('checks', i, 'due')}>${fmtD(c.due) || t('기한 없음')}</span> <span class="due ed" ${at('checks', i, 'owner')}>${esc(c.owner) || t('담당 없음')}</span></span><button class="del" data-del="checks" data-i="${i}">×</button></div>`; }).join('') + `<div style="margin-top:8px">${ADD('checks', { gate: s.g.id, critical: 'N', done: 'N' })}</div>`,
+    `<span class="b ${s.done === s.total && s.total ? 'b-ok' : s.st !== 'ok' ? 'b-bad' : s.done ? 'b-warn' : 'b-gray'}">${s.done}/${s.total}</span>`)).join('')}</div>`;
+  return h;
+}
+function gateDecisions() {
+  const sts = ['긴급', '지연', '결정', '진행', '완료'];
+  let h = `<div class="grid g5 stat-row">${sts.map(s => { const n = DB.decisions.filter(d => d.state === s).length; return `<div class="sbox" style="border-top-color:${STC[s]}"><div class="sb-l">${t(s)}</div><div class="sb-v" style="color:${n ? STC[s] : '#cbd5e1'}">${n}</div></div>`; }).join('')}</div>`;
+  const dec = DB.decisions.map((d, i) => [d, i]).sort((a, b) => sts.indexOf(a[0].state) - sts.indexOf(b[0].state));
+  h += card('dec', t('의사결정 안건') + ` <span class="tag-s">${t('상태 순 정렬')}</span>`, `<div class="tblwrap"><table class="ui-tbl">${TH([['No', 'width:36px'], ['대상', 'width:100px'], ['Gate', 'width:60px'], '현황', '개선사항 (액션)', ['담당', 'width:84px'], ['기한', 'width:100px'], ['상태', 'width:70px']])}<tbody>
+    ${dec.map((x, n) => { const d = x[0], i = x[1]; return `<tr class="rl" style="--rl:${STC[d.state] || C.gray}"><td class="ctr">${n + 1}</td>${TD('decisions', i, 'target', 'lbl')}${TD('decisions', i, 'gate', 'ctr')}${TD('decisions', i, 'status')}${TD('decisions', i, 'action')}${TD('decisions', i, 'owner', 'ctr')}${TD('decisions', i, 'due', 'ctr nw', `${fmtD(d.due)} ${d.state !== '완료' ? dday(d.due) : ''}`)}${TD('decisions', i, 'state', 'ctr', badge(d.state))}${DEL('decisions', i)}</tr>`; }).join('')}
+    </tbody></table></div>`, ADD('decisions', { state: '결정' }), true);
   return h;
 }
 
 /* ============ P2 사업·계약구조 ============ */
 function pageStruct() {
+  const TB = tabs('p2', [['st', '구조도'], ['ct', '계약 현황', DB.contracts.filter(c => c.state !== '체결').length], ['raci', '승인권', DB.raci.filter(r => !yes(r.agreed)).length]]);
+  let h = head('사업·계약구조', '3자 구조, 계약 상태, 역할·승인권을 한 화면에서 고정한다') + TB.html;
+  if (TB.cur === 'st') h += `<div class="grid g-73">${card('s_svg', t('3자 계약구조도'), structSvg(), `<span class="b b-gray">${t('점선 = 미체결 · 계약 표 상태와 연동')}</span>`)}${card('s_note', t('구조 판정'), note('p2_diag', '진단') + '<div style="height:8px"></div>' + note('p2_action', '개선안'))}</div>`;
+  if (TB.cur === 'ct') {
+    h += `<div class="grid g3">${DB.contracts.map((c, i) => { const p = Math.min(100, num(c.progress)), col = c.state === '체결' ? C.green : p < 30 ? C.red : C.navy; return `<div class="ccard" style="border-top-color:${STC[c.state] || C.gray}"><div class="cc-h"><b>${esc(c.name)}</b>${badge(c.state)}</div><div class="cc-b">${ring(p, { size: 78, stroke: 8, color: col, sub: t('진척') })}<div class="cc-m"><div><span>${t('당사자')}</span>${esc(c.parties)}</div><div><span>${t('담당')}</span>${esc(c.owner)}</div><div><span>${t('목표일')}</span>${fmtD(c.due)} ${c.state !== '체결' ? dday(c.due) : ''}</div></div></div><div class="cc-c"><span>${t('핵심 조항')}</span>${esc(c.clauses)}</div>${c.issue ? `<div class="cc-i"><b>${t('쟁점')}</b> ${esc(c.issue)}</div>` : ''}</div>`; }).join('')}</div>`;
+    h += sec(1, '계약 편집');
+    h += card('ct', t('계약'), `<div class="tblwrap"><table class="ui-tbl">${TH(['No', '계약', '당사자', '핵심 조항', '쟁점', '담당', '목표일', '진척%', '상태'])}<tbody>${DB.contracts.map((c, i) => `<tr><td class="ctr">${i + 1}</td>${TD('contracts', i, 'name', 'lbl nw')}${TD('contracts', i, 'parties')}${TD('contracts', i, 'clauses')}${TD('contracts', i, 'issue')}${TD('contracts', i, 'owner', 'ctr nw')}${TD('contracts', i, 'due', 'ctr nw', fmtD(c.due))}${TD('contracts', i, 'progress', '', ib(num(c.progress) + '%', 100, c.state === '체결' ? C.green : C.navy))}${TD('contracts', i, 'state', 'ctr', badge(c.state))}${DEL('contracts', i)}</tr>`).join('')}</tbody></table></div>`, ADD('contracts', { state: '미체결' }), true);
+  }
+  if (TB.cur === 'raci') {
+    const P = [['hq', '메가젠 본사'], ['biolase', 'BIOLASE'], ['coxo', 'COXO'], ['ningbo', '닝보메가젠']];
+    const RC = { A: C.navy, R: C.mid, C: C.pale, I: '#f1f5f9' };
+    const sum = P.map(p => `<div class="hb"><div class="hb-l" style="width:90px">${t(p[1])}</div><div class="hb-b">${stack(['A', 'R', 'C', 'I'].map(k => ({ l: k, v: DB.raci.filter(r => r[p[0]] === k).length, c: RC[k], tc: k === 'C' || k === 'I' ? '#1e2f5e' : '#fff' })), { h: 18, min: 8, fmt: x => x.l + x.v })}</div></div>`).join('');
+    const bad = DB.raci.filter(r => P.filter(p => r[p[0]] === 'A').length !== 1);
+    h += `<div class="grid g-73">${card('raci', t('역할 · 승인권 매트릭스'), `<div class="tblwrap"><table class="ui-tbl">${TH([['의사결정 항목', 'text-align:left'], '메가젠 본사', 'BIOLASE', 'COXO', '닝보메가젠', '합의'])}<tbody>${DB.raci.map((r, i) => `<tr class="${yes(r.agreed) ? '' : 'rl'}" style="--rl:${C.red}">${TD('raci', i, 'item', 'lbl')}${P.map(p => TD('raci', i, p[0], 'ctr', r[p[0]] && r[p[0]] !== '-' ? `<span class="rc rc-${r[p[0]]}">${esc(r[p[0]])}</span>` : '<span style="color:#cbd5e1">—</span>')).join('')}${TD('raci', i, 'agreed', 'ctr', yes(r.agreed) ? badge('합의') : `<span class="b b-bad">${t('미결')}</span>`)}${DEL('raci', i)}</tr>`).join('')}</tbody></table></div>${bad.length ? `<div class="hint" style="padding:8px 12px;color:#b91c1c">${t('승인(A)이 1곳이 아닌 항목')}: ${bad.map(r => esc(r.item)).join(', ')}</div>` : ''}`, ADD('raci', { agreed: 'N' }), true)}
+      ${card('raci_s', t('주체별 역할 분포'), sum + lg([['A 승인', C.navy], ['R 실행', C.mid], ['C 협의', C.pale], ['I 공유', '#f1f5f9', 'outline:1px solid #cbd5e1']]) + `<div class="note" style="margin-top:10px"><span class="h">${t('합의')}</span>${DB.raci.filter(r => yes(r.agreed)).length}/${DB.raci.length} · ${t('미결 항목은 계약 조항에 반영 필요')}</div>`)}</div>`;
+  }
+  return h;
+}
+function structSvg() {
   const find = re => DB.contracts.find(c => re.test(c.name)) || {};
   const C1 = find(/OEM/i), C2 = find(/인허가|등록|귀속/), C3 = find(/상표/);
-  const ln = c => c.state === '체결' ? { s: '#1e2f5e', d: '', m: 'ar' } : { s: '#dc2626', d: '5 4', m: 'ar2' };
+  const ln = c => c.state === '체결' ? { s: '#1e2f5e', d: '', m: 'ar' } : { s: '#dc2626', d: '6 4', m: 'ar2' };
   const a = ln(C1), b = ln(C2), c3 = ln(C3);
-  const svg = `<svg viewBox="0 0 640 330" width="100%" style="display:block;max-height:330px;font-family:inherit">
+  const pill = (x, y, c, anchor) => { const txt = t(c.state || '—'), w = txt.length * 11 + 16, x0 = anchor === 'end' ? x - w : anchor === 'middle' ? x - w / 2 : x; return `<rect x="${x0}" y="${y - 11}" width="${w}" height="18" fill="${c.state === '체결' ? '#ecfdf5' : '#fef2f2'}" stroke="${c.state === '체결' ? '#a7f3d0' : '#fecaca'}"/><text x="${x0 + w / 2}" y="${y + 2}" text-anchor="middle" font-size="10.5" font-weight="700" fill="${c.state === '체결' ? '#047857' : '#b91c1c'}">${esc(txt)}</text>`; };
+  return `<svg viewBox="0 0 640 340" width="100%" style="display:block;max-height:360px;font-family:inherit">
   <defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1e2f5e"/></marker><marker id="ar2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker></defs>
-  <rect x="200" y="12" width="240" height="62" fill="#1e2f5e"/><text x="320" y="38" text-anchor="middle" fill="#fff" font-size="14" font-weight="800">MEGAGEN · BIOLASE</text><text x="320" y="58" text-anchor="middle" fill="#9bc0f4" font-size="11">${t('브랜드 · 기술 · 핵심부품')}</text>
-  <rect x="30" y="150" width="200" height="62" fill="#fff" stroke="#1e2f5e" stroke-width="1.5"/><text x="130" y="176" text-anchor="middle" fill="#1e2f5e" font-size="14" font-weight="800">COXO</text><text x="130" y="196" text-anchor="middle" fill="#64748b" font-size="11">${t('OEM 생산 · 7F 라인')}</text>
-  <rect x="410" y="150" width="200" height="62" fill="#fff" stroke="#1e2f5e" stroke-width="1.5"/><text x="510" y="176" text-anchor="middle" fill="#1e2f5e" font-size="14" font-weight="800">${t('닝보메가젠')}</text><text x="510" y="196" text-anchor="middle" fill="#64748b" font-size="11">${t('중국 유통 · 판매')}</text>
-  <rect x="410" y="262" width="200" height="50" fill="#f1f3f7" stroke="#cbd5e1"/><text x="510" y="284" text-anchor="middle" fill="#334155" font-size="12.5" font-weight="700">${t('대리상 → 치과 · 병원')}</text><text x="510" y="301" text-anchor="middle" fill="#64748b" font-size="10.5">招标 · 民营 · 个体</text>
-  <rect x="30" y="262" width="200" height="50" fill="${C2.state === '체결' ? '#eef4ff' : '#fef2f2'}" stroke="${C2.state === '체결' ? '#c9d2e4' : '#fecaca'}"/><text x="130" y="284" text-anchor="middle" fill="${b.s}" font-size="12.5" font-weight="700">${t('NMPA 등록증')}</text><text x="130" y="301" text-anchor="middle" fill="${b.s}" font-size="10.5">${esc(C2.state === '체결' ? t('귀속 확정') : (C2.issue || t('귀속 미정')))}</text>
-  <path d="M230 74 L160 148" stroke="${a.s}" stroke-width="1.6" stroke-dasharray="${a.d}" fill="none" marker-end="url(#${a.m})"/><text x="186" y="104" text-anchor="end" fill="${a.s}" font-size="11" font-weight="700">${esc(C1.name || '① OEM')}</text><text x="186" y="119" text-anchor="end" fill="#64748b" font-size="10.5">${esc(t(C1.state || ''))}</text>
-  <path d="M410 74 L480 148" stroke="${c3.s}" stroke-width="1.6" stroke-dasharray="${c3.d}" fill="none" marker-end="url(#${c3.m})"/><text x="455" y="104" fill="${c3.s}" font-size="11" font-weight="700">${esc(C3.name || '③')}</text><text x="455" y="119" fill="#64748b" font-size="10.5">${esc(t(C3.state || ''))}</text>
-  <path d="M230 181 L408 181" stroke="#1e2f5e" stroke-width="1.6" fill="none" marker-end="url(#ar)"/><text x="319" y="173" text-anchor="middle" fill="#1e2f5e" font-size="11" font-weight="700">${t('완제품 공급')}</text>
-  <path d="M130 212 L130 260" stroke="${b.s}" stroke-width="1.6" stroke-dasharray="${b.d}" fill="none" marker-end="url(#${b.m})"/><text x="140" y="241" fill="${b.s}" font-size="11" font-weight="700">${esc(C2.name || '②')}</text>
-  <path d="M510 212 L510 260" stroke="#1e2f5e" stroke-width="1.6" fill="none" marker-end="url(#ar)"/></svg>`;
-  let h = head('사업·계약구조', '3자 구조, 계약 상태, 역할·승인권을 한 화면에서 고정한다');
-  h += `<div class="grid g-73">${card('s_svg', t('3자 계약구조도'), svg, `<span class="b b-gray">${t('점선 = 미체결 · 계약 표 상태와 연동')}</span>`)}${card('s_note', t('구조 판정'), note('p2_diag', '진단') + '<div style="height:8px"></div>' + note('p2_action', '개선안'))}</div>`;
-  h += sec(1, '계약 현황');
-  h += card('ct', t('계약'), `<div class="tblwrap"><table class="ui-tbl">${TH(['No', '계약', '당사자', '핵심 조항', '쟁점', '담당', '목표일', '진척%', '상태'])}<tbody>${DB.contracts.map((c, i) => { const p = Math.min(100, num(c.progress)); return `<tr><td class="ctr">${i + 1}</td>${TD('contracts', i, 'name', 'lbl nw')}${TD('contracts', i, 'parties')}${TD('contracts', i, 'clauses')}${TD('contracts', i, 'issue')}${TD('contracts', i, 'owner', 'ctr nw')}${TD('contracts', i, 'due', 'ctr nw', fmtD(c.due))}${TD('contracts', i, 'progress', '', `<div style="display:flex;align-items:center;gap:6px"><div class="bar" style="flex:1"><i style="width:${p}%;background:${c.state === '체결' ? '#059669' : p < 30 ? '#dc2626' : '#1e2f5e'}"></i></div><span>${p}%</span></div>`)}${TD('contracts', i, 'state', 'ctr', badge(c.state))}${DEL('contracts', i)}</tr>`; }).join('')}</tbody></table></div>`, ADD('contracts', { state: '미체결' }), true);
-  h += sec(2, '역할 · 승인권 매트릭스', `<span class="legend" style="margin:0">A ${t('승인')} · R ${t('실행')} · C ${t('협의')} · I ${t('공유')}</span>`);
-  h += card('raci', t('승인권'), `<div class="tblwrap"><table class="ui-tbl">${TH([['의사결정 항목', 'text-align:left'], '메가젠 본사', 'BIOLASE', 'COXO', '닝보메가젠', '합의'])}<tbody>${DB.raci.map((r, i) => `<tr>${TD('raci', i, 'item', 'lbl')}${['hq', 'biolase', 'coxo', 'ningbo'].map(f => TD('raci', i, f, 'ctr', `<span style="${r[f] === 'A' ? 'font-weight:800;color:#1e2f5e' : ''}">${esc(r[f])}</span>`)).join('')}${TD('raci', i, 'agreed', 'ctr', yes(r.agreed) ? badge('합의') : `<span class="b b-bad">${t('미결')}</span>`)}${DEL('raci', i)}</tr>`).join('')}</tbody></table></div>
-    ${(() => { const bad = DB.raci.filter(r => ['hq', 'biolase', 'coxo', 'ningbo'].filter(f => r[f] === 'A').length !== 1); return bad.length ? `<div class="hint" style="padding:8px 12px;color:#b91c1c">${t('승인(A)이 1곳이 아닌 항목')}: ${bad.map(r => esc(r.item)).join(', ')}</div>` : ''; })()}`, ADD('raci', { agreed: 'N' }), true);
-  return h;
+  <rect x="190" y="10" width="260" height="68" fill="#1e2f5e"/><rect x="190" y="10" width="6" height="68" fill="#5b8ce0"/><text x="323" y="38" text-anchor="middle" fill="#fff" font-size="15" font-weight="800">MEGAGEN · BIOLASE</text><text x="323" y="60" text-anchor="middle" fill="#9bc0f4" font-size="11">${t('브랜드 · 기술 · 핵심부품')}</text>
+  <rect x="24" y="156" width="206" height="66" fill="#fff" stroke="#1e2f5e" stroke-width="1.5"/><rect x="24" y="156" width="6" height="66" fill="#3d6cca"/><text x="130" y="183" text-anchor="middle" fill="#1e2f5e" font-size="15" font-weight="800">COXO</text><text x="130" y="204" text-anchor="middle" fill="#64748b" font-size="11">${t('OEM 생산 · 7F 라인')}</text>
+  <rect x="410" y="156" width="206" height="66" fill="#fff" stroke="#1e2f5e" stroke-width="1.5"/><rect x="410" y="156" width="6" height="66" fill="#3d6cca"/><text x="516" y="183" text-anchor="middle" fill="#1e2f5e" font-size="15" font-weight="800">${t('닝보메가젠')}</text><text x="516" y="204" text-anchor="middle" fill="#64748b" font-size="11">${t('중국 유통 · 판매')}</text>
+  <rect x="410" y="272" width="206" height="54" fill="#f1f3f7" stroke="#cbd5e1"/><text x="513" y="295" text-anchor="middle" fill="#334155" font-size="12.5" font-weight="700">${t('대리상 → 치과 · 병원')}</text><text x="513" y="313" text-anchor="middle" fill="#64748b" font-size="10.5">招标 · 民营 · 个体</text>
+  <rect x="24" y="272" width="206" height="54" fill="${C2.state === '체결' ? '#eef4ff' : '#fef2f2'}" stroke="${C2.state === '체결' ? '#c9d2e4' : '#fecaca'}"/><text x="127" y="295" text-anchor="middle" fill="${b.s}" font-size="12.5" font-weight="700">${t('NMPA 등록증')}</text><text x="127" y="313" text-anchor="middle" fill="${b.s}" font-size="10.5">${esc(C2.state === '체결' ? t('귀속 확정') : (C2.issue || t('귀속 미정')))}</text>
+  <path d="M232 78 L160 154" stroke="${a.s}" stroke-width="2" stroke-dasharray="${a.d}" fill="none" marker-end="url(#${a.m})"/><text x="186" y="106" text-anchor="end" fill="${a.s}" font-size="11.5" font-weight="700">${esc(C1.name || '① OEM')}</text>${pill(186, 124, C1, 'end')}
+  <path d="M408 78 L486 154" stroke="${c3.s}" stroke-width="2" stroke-dasharray="${c3.d}" fill="none" marker-end="url(#${c3.m})"/><text x="458" y="106" fill="${c3.s}" font-size="11.5" font-weight="700">${esc(C3.name || '③')}</text>${pill(458, 124, C3, 'start')}
+  <path d="M232 189 L406 189" stroke="#1e2f5e" stroke-width="2" fill="none" marker-end="url(#ar)"/><text x="319" y="180" text-anchor="middle" fill="#1e2f5e" font-size="11.5" font-weight="700">${t('완제품 공급')}</text>
+  <path d="M127 222 L127 268" stroke="${b.s}" stroke-width="2" stroke-dasharray="${b.d}" fill="none" marker-end="url(#${b.m})"/><text x="137" y="244" fill="${b.s}" font-size="11.5" font-weight="700">${esc(C2.name || '②')}</text>${pill(137, 260, C2, 'start')}
+  <path d="M513 222 L513 268" stroke="#1e2f5e" stroke-width="2" fill="none" marker-end="url(#ar)"/></svg>`;
 }
 
 /* ============ P3 인허가·중국산화 ============ */
 function pageReg() {
   const cn = cnStat(), cur = DB.nmpa.find(n => n.state === '정체') || DB.nmpa.find(n => n.state === '진행');
-  let h = head('인허가 · 중국산화', 'NMPA 진행과 중국산 자격(부품 비율)을 사업 성립 요건으로 관리한다');
-  h += card('nmpa', t('NMPA 등록 단계'), `<div class="steps" style="margin-top:8px">${DB.nmpa.map((n, i) => `<div class="step s-${esc(n.state)}"><i class="dot"></i><b class="ed" ${at('nmpa', i, 'step')}>${esc(n.step)}</b><span class="sd ed" ${at('nmpa', i, 'desc')}>${esc(n.desc)}</span><span class="ed" ${at('nmpa', i, 'state')}>${badge(n.state)}</span></div>`).join('')}</div>`,
-    (cur ? `<span class="b ${cur.state === '정체' ? 'b-bad' : 'b-warn'}">${esc(cur.step)} ${t(cur.state)}</span>` : '') + ADD('nmpa', { state: '예정' }));
+  const TB = tabs('p3', [['nmpa', 'NMPA 단계', DB.nmpa.filter(n => n.state === '정체').length], ['cn', '중국산 비율'], ['bom', 'BOM', DB.bom.filter(b => yes(b.localizable) && b.state === '미착수').length], ['smp', '시료 물류', DB.samples.filter(s => s.result === '보류').length]]);
+  let h = head('인허가 · 중국산화', 'NMPA 진행과 중국산 자격(부품 비율)을 사업 성립 요건으로 관리한다') + TB.html;
   const thTxt = cn.th === null ? t('확정 필요') : cn.th + '%';
-  h += `<div class="grid g2" style="margin-top:12px">${card('cn', t('중국산 부품비율 트래커'), `
-    <div style="display:flex;justify-content:space-between;align-items:baseline;font-size:11.5px;margin-bottom:6px;gap:8px;flex-wrap:wrap"><span>${t('현재')} <b style="font-size:19px;color:${cn.th !== null && cn.now >= cn.th ? '#059669' : '#dc2626'}">${cn.now}%</b></span><span style="color:var(--muted)">${t('원가 기준')} · ${t('국산화 가능 최대')} <b style="color:#1e2f5e">${cn.pot}%</b> · ${t('기준선')} <b class="ed" ${atk('settings', 'cn_threshold', 'value')} style="color:#b91c1c">${thTxt}</b></span></div>
-    <div class="gauge"><div class="fp" style="width:${cn.pot}%"></div><div class="fc" style="width:${cn.now}%"></div>${cn.th !== null ? `<div class="tg" style="left:${Math.min(cn.th, 100)}%"></div>` : ''}</div>
-    <div class="legend"><span><i style="background:#1e2f5e"></i>${t('현재 중국 조달')}</span><span><i style="background:#dbe4f4"></i>${t('국산화 가능(후보)')}</span><span><i style="border-left:2px dashed #dc2626;width:0;height:12px"></i>${t('자격 기준선')}</span></div>
-    ${cn.th !== null && cn.pot < cn.th ? `<div class="note" style="margin-top:8px;border-color:#fecaca;background:#fef2f2;color:#b91c1c"><b style="color:#b91c1c">${t('경고')}</b> ${t('국산화 후보를 모두 적용해도 기준선 미달')} (${cn.pot}% &lt; ${cn.th}%)</div>` : ''}
-    <div style="height:8px"></div>${note('p3_core', '핵심 판단')}`, `<span class="b b-bad">${t('사업 성립 요건')}</span>`)}
-    ${card('smp', t('시료 물류 이력'), `<table class="ui-tbl">${TH(['차수', '예정일', '결과', '원인'])}<tbody>${DB.samples.map((s, i) => `<tr>${TD('samples', i, 'round', 'ctr')}${TD('samples', i, 'date', 'ctr nw', fmtD(s.date) || '—')}${TD('samples', i, 'result', 'ctr', badge(s.result))}${TD('samples', i, 'cause')}${DEL('samples', i)}</tr>`).join('')}</tbody></table><div style="height:8px"></div>${note('p3_sample', '개선안')}`, ADD('samples', { result: '예정' }))}</div>`;
-  h += sec(1, 'BOM 국산화 계획', `<span class="b b-warn">${t('원가비중 합계')} ${cn.tot}%${cn.tot !== 100 ? ' — ' + t('100%가 아님') : ''}</span>`);
-  h += card('bom', t('BOM'), `<div class="tblwrap"><table class="ui-tbl">${TH(['No', ['부품', 'text-align:left'], '원가비중%', '현재 조달', '중국조달', '국산화 대상', '후보 공급사', '담당', '상태'])}<tbody>${DB.bom.map((b, i) => `<tr><td class="ctr">${i + 1}</td>${TD('bom', i, 'part', 'lbl')}${TD('bom', i, 'cost_pct', 'num')}${TD('bom', i, 'source', 'ctr')}${TD('bom', i, 'cn_now', 'ctr', yes(b.cn_now) ? badge('적용') : '—')}${TD('bom', i, 'localizable', 'ctr', yes(b.localizable) ? `<span class="b b-info">${t('대상')}</span>` : `<span class="b b-gray">${t('불가')}</span>`)}${TD('bom', i, 'supplier', 'ctr')}${TD('bom', i, 'owner', 'ctr', esc(b.owner) || `<span style="color:#b91c1c">${t('미지정')}</span>`)}${TD('bom', i, 'state', 'ctr', b.state ? badge(b.state) : '—')}${DEL('bom', i)}</tr>`).join('')}</tbody>
-  <tfoot><tr><td colspan="2">${t('합계')}</td><td class="num">${cn.tot}%</td><td colspan="7" style="text-align:center">${t('중국조달')} <b style="color:#dc2626">${cn.now}%</b> · ${t('국산화 가능 최대')} <b style="color:#1e2f5e">${cn.pot}%</b> · ${t('기준선')} ${thTxt}</td></tr></tfoot></table></div>`, ADD('bom', { cn_now: 'N', localizable: 'N' }), true);
+  if (TB.cur === 'nmpa') {
+    const done = DB.nmpa.filter(n => n.state === '완료').length;
+    h += card('nmpa', t('NMPA 등록 단계') + ` <span class="tag-s">${done}/${DB.nmpa.length} ${t('완료')}</span>`, `<div class="bstep">${DB.nmpa.map((n, i) => `<div class="bs s-${esc(n.state)}"><div class="bs-c">${n.state === '완료' ? '✓' : i + 1}</div><div class="bs-n ed" ${at('nmpa', i, 'step')}>${esc(n.step)}</div><div class="bs-d ed" ${at('nmpa', i, 'desc')}>${esc(n.desc)}</div><div class="ed" ${at('nmpa', i, 'state')}>${badge(n.state)}</div></div>`).join('')}</div>`, ADD('nmpa', { state: '예정' }));
+    if (cur) h += `<div class="callout ${cur.state === '정체' ? 'bad' : ''}"><div class="co-l">${t('현재 병목')}</div><div class="co-b"><b>${esc(cur.step)}</b> — ${esc(cur.desc)}</div>${note('p3_sample', '개선안')}</div>`;
+  }
+  if (TB.cur === 'cn') {
+    const nowV = DB.bom.filter(b => yes(b.cn_now)).reduce((a, b) => a + num(b.cost_pct), 0);
+    const potV = DB.bom.filter(b => !yes(b.cn_now) && yes(b.localizable)).reduce((a, b) => a + num(b.cost_pct), 0);
+    const noV = Math.max(0, cn.tot - nowV - potV);
+    const catC = b => yes(b.cn_now) ? C.navy : yes(b.localizable) ? C.lite : C.gray;
+    const comp = `<div class="stk tall">${DB.bom.slice().sort((x, y) => (yes(y.cn_now) - yes(x.cn_now)) || (yes(y.localizable) - yes(x.localizable)) || num(y.cost_pct) - num(x.cost_pct)).map(b => { const w = cn.tot ? num(b.cost_pct) / cn.tot * 100 : 0; return `<i style="width:${w}%;background:${catC(b)};color:${yes(b.cn_now) ? '#fff' : '#1e2f5e'}" title="${esc(b.part)} ${num(b.cost_pct)}%"><span>${w >= 7 ? esc(b.part) : ''}</span><em>${w >= 4 ? num(b.cost_pct) + '%' : ''}</em></i>`; }).join('')}</div>`;
+    h += `<div class="grid g-37">${card('cn_d', t('중국산 부품비율'), `<div style="display:flex;align-items:center;gap:18px;flex-wrap:wrap">${donut([{ l: t('중국 조달'), v: nowV, c: C.navy }, { l: t('국산화 후보'), v: potV, c: C.lite }, { l: t('국산화 불가'), v: noV, c: C.gray }], { size: 150, stroke: 22, label: cn.now + '%', sub: t('현재 중국 조달'), tc: cn.th !== null && cn.now >= cn.th ? C.green : C.red })}<div class="dl2"><div><i style="background:${C.navy}"></i>${t('중국 조달')}<b>${cn.now}%</b></div><div><i style="background:${C.lite}"></i>${t('국산화 후보')}<b>${cn.tot ? Math.round(potV / cn.tot * 1000) / 10 : 0}%</b></div><div><i style="background:${C.gray}"></i>${t('국산화 불가')}<b>${cn.tot ? Math.round(noV / cn.tot * 1000) / 10 : 0}%</b></div><div class="dl2-th">${t('자격 기준선')} <b class="ed" ${atk('settings', 'cn_threshold', 'value')} style="color:#b91c1c">${thTxt}</b></div></div></div>`, `<span class="b b-bad">${t('사업 성립 요건')}</span>`)}
+      ${card('cn_c', t('원가 구성 — 부품별 조달 상태'), `${comp}${lg([['중국 조달', C.navy], ['국산화 후보', C.lite], ['국산화 불가', C.gray]])}<div style="margin-top:14px"><div class="gc-cap" style="margin-bottom:4px">${t('기준선 대비')} — ${t('현재')} ${cn.now}% · ${t('최대')} ${cn.pot}% · ${t('기준선')} ${thTxt}</div><div class="gauge"><div class="fp" style="width:${cn.pot}%"></div><div class="fc" style="width:${cn.now}%"></div>${cn.th !== null ? `<div class="tg" style="left:${Math.min(cn.th, 100)}%"></div>` : ''}</div><div class="scale"><span>0</span><span>25</span><span>50</span><span>75</span><span>100%</span></div></div>
+        ${cn.th !== null && cn.pot < cn.th ? `<div class="callout bad" style="margin-top:10px"><div class="co-l">${t('경고')}</div><div class="co-b">${t('국산화 후보를 모두 적용해도 기준선 미달')} (${cn.pot}% &lt; ${cn.th}%)</div></div>` : ''}<div style="height:10px"></div>${note('p3_core', '핵심 판단')}`)}</div>`;
+  }
+  if (TB.cur === 'bom') {
+    const mx = Math.max(1, ...DB.bom.map(b => num(b.cost_pct)));
+    h += card('bom', t('BOM 국산화 계획') + ` <span class="tag-s">${t('원가비중 합계')} ${cn.tot}%${cn.tot !== 100 ? ' — ' + t('100%가 아님') : ''}</span>`, `<div class="tblwrap"><table class="ui-tbl">${TH(['No', ['부품', 'text-align:left'], ['원가비중%', 'width:160px'], '현재 조달', '중국조달', '국산화 대상', '후보 공급사', '담당', '상태'])}<tbody>${DB.bom.map((b, i) => `<tr><td class="ctr">${i + 1}</td>${TD('bom', i, 'part', 'lbl')}${TD('bom', i, 'cost_pct', '', ib(num(b.cost_pct) + '%', mx, yes(b.cn_now) ? C.navy : yes(b.localizable) ? C.sky : C.gray))}${TD('bom', i, 'source', 'ctr')}${TD('bom', i, 'cn_now', 'ctr', yes(b.cn_now) ? badge('적용') : '—')}${TD('bom', i, 'localizable', 'ctr', yes(b.localizable) ? `<span class="b b-info">${t('대상')}</span>` : `<span class="b b-gray">${t('불가')}</span>`)}${TD('bom', i, 'supplier', 'ctr')}${TD('bom', i, 'owner', 'ctr', esc(b.owner) || `<span style="color:#b91c1c">${t('미지정')}</span>`)}${TD('bom', i, 'state', 'ctr', b.state ? badge(b.state) : '—')}${DEL('bom', i)}</tr>`).join('')}</tbody>
+      <tfoot><tr><td colspan="2">${t('합계')}</td><td>${cn.tot}%</td><td colspan="7" style="text-align:center">${t('중국조달')} <b style="color:#dc2626">${cn.now}%</b> · ${t('국산화 가능 최대')} <b style="color:#1e2f5e">${cn.pot}%</b> · ${t('기준선')} ${thTxt}</td></tr></tfoot></table></div>`, ADD('bom', { cn_now: 'N', localizable: 'N' }), true);
+  }
+  if (TB.cur === 'smp') {
+    h += card('smp_t', t('시료 입고 시도 이력'), `<div class="stl">${DB.samples.map((s, i) => `<div class="stl-i r-${esc(s.result)}"><div class="stl-c">${i + 1}</div><div class="stl-d">${fmtD(s.date) || '—'}</div>${badge(s.result)}<div class="stl-t">${esc(s.cause)}</div></div>`).join('<div class="stl-ln"></div>')}</div>`);
+    h += `<div class="grid g2" style="margin-top:12px">${card('smp', t('시료 물류 이력'), `<table class="ui-tbl">${TH(['차수', '예정일', '결과', '원인'])}<tbody>${DB.samples.map((s, i) => `<tr>${TD('samples', i, 'round', 'ctr')}${TD('samples', i, 'date', 'ctr nw', fmtD(s.date) || '—')}${TD('samples', i, 'result', 'ctr', badge(s.result))}${TD('samples', i, 'cause')}${DEL('samples', i)}</tr>`).join('')}</tbody></table>`, ADD('samples', { result: '예정' }), true)}${card('smp_n', t('판단'), note('p3_sample', '개선안'))}</div>`;
+  }
   return h;
 }
 
 /* ============ P4 생산라인 ============ */
 function pageLine() {
-  const eq = DB.line.filter(l => l.type === '설비'), eqd = eq.filter(l => l.state === '완료').length;
-  const lp = num(S('line_progress')), pdn = num(S('pilot_done')), ptg = num(S('pilot_target')), td = num(S('train_done')), tt = num(S('train_target'));
-  let h = head('생산라인', 'COXO 7층 70평 라인 구축, 설비·교육, 파일럿 진척');
-  h += `<div class="grid g4">
-    ${kpi('라인 구축', lp, '%', `<div class="bar" style="margin-top:4px"><i style="width:${Math.min(lp, 100)}%;background:#1e2f5e"></i></div>`, '', atk('settings', 'line_progress', 'value'))}
-    ${kpi('설비', eqd, '/ ' + eq.length, eq.filter(l => l.state === '미착수').map(l => esc(l.item)).join(', ') ? t('미착수') + ': ' + eq.filter(l => l.state === '미착수').map(l => esc(l.item)).join(', ') : t('라인 표 기준'), eq.some(l => l.state === '미착수' || l.state === '지연') ? 'alert' : '')}
-    ${kpi('교육 이수', `${td}</span><span class="ui-kpi-u">/ </span><span class="ed" ${atk('settings', 'train_target', 'value')}>${tt}`, t('명'), t('BIOLASE 엔지니어 교육'), td < tt ? 'warnk' : 'okk', atk('settings', 'train_done', 'value'))}
-    ${kpi('파일럿 생산', `${pdn}</span><span class="ui-kpi-u">/ </span><span class="ed" ${atk('settings', 'pilot_target', 'value')}>${ptg}`, t('대'), t('→ KOL 제공 연결'), pdn < ptg ? 'warnk' : 'okk', atk('settings', 'pilot_done', 'value'))}
-  </div>`;
-  const Z = DB.zones, z = i => Z[i] || { zone: '', note: '' };
-  const bad = s => /미|지연|보류/.test(s || '');
-  const box = (i, x, y, w, hh, dark) => { const r = z(i), b2 = bad(r.note); return `<g><rect x="${x}" y="${y}" width="${w}" height="${hh}" fill="${dark ? '#1e2f5e' : b2 ? '#fef2f2' : '#fff'}" stroke="${dark ? '#1e2f5e' : b2 ? '#fecaca' : '#cbd5e1'}"/><text x="${x + w / 2}" y="${y + hh / 2 - 4}" text-anchor="middle" fill="${dark ? '#fff' : b2 ? '#b91c1c' : '#1e2f5e'}" font-size="13" font-weight="800">${esc(r.zone)}</text><text x="${x + w / 2}" y="${y + hh / 2 + 15}" text-anchor="middle" fill="${dark ? '#9bc0f4' : b2 ? '#b91c1c' : '#64748b'}" font-size="11">${esc(r.note)}</text></g>`; };
-  const svg = `<svg viewBox="0 0 520 240" width="100%" style="display:block;max-height:260px;font-family:inherit"><rect x="4" y="4" width="512" height="232" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.5"/>${box(0, 16, 16, 200, 120, 1)}${box(1, 226, 16, 130, 120)}${box(2, 366, 16, 138, 120)}${box(3, 16, 146, 240, 78)}${box(4, 266, 146, 238, 78)}</svg>
-   <table class="ui-tbl" style="margin-top:8px">${TH(['구역', '상태'])}<tbody>${Z.slice(0, 5).map((r, i) => `<tr>${TD('zones', i, 'zone', 'lbl')}${TD('zones', i, 'note')}${DEL('zones', i)}</tr>`).join('')}</tbody></table>`;
-  h += `<div class="grid g-73" style="margin-top:12px">${card('zone', t('7F 레이아웃 (70평)'), svg, Z.length < 5 ? ADD('zones', {}) : '')}${card('l_note', t('파일럿 → 시장 연결'), note('p4_diag', '진단') + '<div style="height:8px"></div>' + note('p4_action', '개선안'))}</div>`;
-  h += sec(1, '설비 · 교육 · 품질 체크리스트');
-  h += card('line', t('라인'), `<div class="tblwrap"><table class="ui-tbl">${TH(['No', ['항목', 'text-align:left'], '구분', '담당', '목표일', '상태'])}<tbody>${DB.line.map((l, i) => { const dd = days(l.due); return `<tr><td class="ctr">${i + 1}</td>${TD('line', i, 'item', 'lbl')}${TD('line', i, 'type', 'ctr')}${TD('line', i, 'owner', 'ctr', esc(l.owner) || `<span style="color:#b91c1c">${t('미지정')}</span>`)}${TD('line', i, 'due', 'ctr nw', `<span class="due ${dd !== null && dd < 0 && l.state !== '완료' ? 'over' : ''}" style="font-size:12px">${fmtD(l.due) || '—'}</span>`)}${TD('line', i, 'state', 'ctr', badge(l.state))}${DEL('line', i)}</tr>`; }).join('')}</tbody></table></div>`, ADD('line', { type: '설비', state: '예정' }), true);
+  const TB = tabs('p4', [['ov', '현황'], ['lay', '레이아웃'], ['list', '체크리스트', DB.line.filter(l => l.state === '미착수' || l.state === '지연').length]]);
+  let h = head('생산라인', 'COXO 7층 70평 라인 구축, 설비·교육, 파일럿 진척') + TB.html;
+  if (TB.cur === 'ov') {
+    const eq = DB.line.filter(l => l.type === '설비'), eqd = eq.filter(l => l.state === '완료').length;
+    const lp = num(S('line_progress')), pdn = num(S('pilot_done')), ptg = num(S('pilot_target')), td = num(S('train_done')), tt = num(S('train_target'));
+    const rc = (label, pct, big, sub, edk, col) => `<div class="rcard">${ring(pct, { size: 96, stroke: 10, color: col || C.navy, label: big, fs: 18 })}<div><div class="ui-kpi-l">${t(label)}</div><div class="rc-sub">${sub}</div>${edk || ''}</div></div>`;
+    h += `<div class="grid g4">
+      ${rc('라인 구축', lp, lp + '%', t('구축 진척률'), `<div class="rc-ed">${t('수정')}: <span class="ed" ${atk('settings', 'line_progress', 'value')}>${lp}</span>%</div>`)}
+      ${rc('설비', eq.length ? eqd / eq.length * 100 : 0, `${eqd}/${eq.length}`, eq.filter(l => l.state === '미착수').length ? `<span style="color:#b91c1c">${t('미착수')} ${eq.filter(l => l.state === '미착수').length}${t('건')}</span>` : t('라인 표 기준'), '', eq.some(l => l.state === '미착수') ? C.red : C.navy)}
+      ${rc('교육 이수', tt ? td / tt * 100 : 0, `${td}/${tt}`, t('BIOLASE 엔지니어 교육'), `<div class="rc-ed">${t('수정')}: <span class="ed" ${atk('settings', 'train_done', 'value')}>${td}</span> / <span class="ed" ${atk('settings', 'train_target', 'value')}>${tt}</span>${t('명')}</div>`, C.amber)}
+      ${rc('파일럿 생산', ptg ? pdn / ptg * 100 : 0, `${pdn}/${ptg}`, t('→ KOL 제공 연결'), `<div class="rc-ed">${t('수정')}: <span class="ed" ${atk('settings', 'pilot_done', 'value')}>${pdn}</span> / <span class="ed" ${atk('settings', 'pilot_target', 'value')}>${ptg}</span>${t('대')}</div>`, C.green)}
+    </div>`;
+    const ST = ['완료', '진행', '예정', '지연', '미착수'];
+    const rows = ['설비', '교육', '품질'].map(ty => { const it = DB.line.filter(l => l.type === ty); return `<div class="hb"><div class="hb-l" style="width:50px">${t(ty)}</div><div class="hb-b">${stack(ST.map(s => ({ l: t(s), v: it.filter(l => l.state === s).length, c: STC[s], tc: s === '예정' ? '#1e2f5e' : '#fff' })), { h: 20, min: 10 })}</div><div class="hb-v">${it.length}</div></div>`; }).join('');
+    h += `<div class="grid g2" style="margin-top:12px">${card('l_type', t('구분별 진행 상태'), rows + lg(ST.map(s => [s, STC[s]])))}${card('l_note', t('파일럿 → 시장 연결'), note('p4_diag', '진단') + '<div style="height:8px"></div>' + note('p4_action', '개선안'))}</div>`;
+  }
+  if (TB.cur === 'lay') {
+    const Z = DB.zones, z = i => Z[i] || { zone: '', note: '' }, bad = s => /미|지연|보류/.test(s || '');
+    const box = (i, x, y, w, hh, dark) => { const r = z(i), b2 = bad(r.note); return `<g><rect x="${x}" y="${y}" width="${w}" height="${hh}" fill="${dark ? '#1e2f5e' : b2 ? '#fef2f2' : '#fff'}" stroke="${dark ? '#1e2f5e' : b2 ? '#f87171' : '#94a3b8'}" stroke-width="1.5"/><rect x="${x}" y="${y}" width="${w}" height="4" fill="${dark ? '#5b8ce0' : b2 ? '#dc2626' : '#3d6cca'}"/><text x="${x + w / 2}" y="${y + hh / 2 - 4}" text-anchor="middle" fill="${dark ? '#fff' : b2 ? '#b91c1c' : '#1e2f5e'}" font-size="14" font-weight="800">${esc(r.zone)}</text><text x="${x + w / 2}" y="${y + hh / 2 + 16}" text-anchor="middle" fill="${dark ? '#9bc0f4' : b2 ? '#b91c1c' : '#64748b'}" font-size="11.5">${esc(r.note)}</text></g>`; };
+    const svg = `<svg viewBox="0 0 540 260" width="100%" style="display:block;max-height:340px;font-family:inherit"><rect x="4" y="4" width="532" height="252" fill="#f8fafc" stroke="#475569" stroke-width="2"/><text x="14" y="248" fill="#94a3b8" font-size="10">7F · 70${t('평')}</text>${box(0, 16, 16, 210, 128, 1)}${box(1, 236, 16, 136, 128)}${box(2, 382, 16, 142, 128)}${box(3, 16, 154, 250, 88)}${box(4, 276, 154, 248, 88)}</svg>`;
+    h += `<div class="grid g-73">${card('zone', t('7F 레이아웃 (70평)'), svg + lg([['운영 중', C.navy], ['정상', '#fff', 'outline:1px solid #94a3b8'], ['미비 · 지연', '#fef2f2', 'outline:1px solid #f87171']]))}${card('zone_t', t('구역 상태'), `<table class="ui-tbl">${TH(['구역', '상태'])}<tbody>${Z.slice(0, 5).map((r, i) => `<tr>${TD('zones', i, 'zone', 'lbl')}${TD('zones', i, 'note')}${DEL('zones', i)}</tr>`).join('')}</tbody></table>`, Z.length < 5 ? ADD('zones', {}) : '', true)}</div>`;
+  }
+  if (TB.cur === 'list') {
+    h += card('line', t('설비 · 교육 · 품질 체크리스트'), `<div class="tblwrap"><table class="ui-tbl">${TH(['No', ['항목', 'text-align:left'], '구분', '담당', '목표일', '상태'])}<tbody>${DB.line.map((l, i) => `<tr class="rl" style="--rl:${STC[l.state] || C.gray}"><td class="ctr">${i + 1}</td>${TD('line', i, 'item', 'lbl')}${TD('line', i, 'type', 'ctr')}${TD('line', i, 'owner', 'ctr', esc(l.owner) || `<span style="color:#b91c1c">${t('미지정')}</span>`)}${TD('line', i, 'due', 'ctr nw', `${fmtD(l.due) || '—'} ${l.state !== '완료' ? dday(l.due) : ''}`)}${TD('line', i, 'state', 'ctr', badge(l.state))}${DEL('line', i)}</tr>`).join('')}</tbody></table></div>`, ADD('line', { type: '설비', state: '예정' }), true);
+  }
   return h;
 }
 
 /* ============ P5 판매구조 ============ */
 function pageSales() {
-  const X = v => 40 + num(v) / 100 * 345, Y = v => 215 - num(v) / 100 * 200;
-  const own = DB.positioning.filter(p => p.kind === '자사');
-  const svg = `<svg viewBox="0 0 400 250" width="100%" style="display:block;max-height:260px;font-family:inherit">
-   <rect x="215" y="10" width="175" height="100" fill="#e9edf6"/><text x="302" y="25" text-anchor="middle" fill="#1e2f5e" font-size="10.5" font-weight="700">${t('프리미엄 영역')}</text>
-   <rect x="40" y="120" width="170" height="100" fill="#fff7ed"/><text x="125" y="212" text-anchor="middle" fill="#c2410c" font-size="10.5" font-weight="700">${t('가격경쟁 영역')}</text>
-   <line x1="40" y1="220" x2="390" y2="220" stroke="#cbd5e1"/><line x1="40" y1="10" x2="40" y2="220" stroke="#cbd5e1"/>
-   <text x="215" y="242" text-anchor="middle" fill="#64748b" font-size="11">${t('가격')} →</text><text x="16" y="115" text-anchor="middle" fill="#64748b" font-size="11" transform="rotate(-90 16 115)">${t('임상 레퍼런스 · 브랜드')} →</text>
-   ${own.length === 2 ? `<path d="M${X(own[0].price)} ${Y(own[0].ref)} L${X(own[1].price)} ${Y(own[1].ref)}" stroke="#dc2626" stroke-dasharray="4 3" fill="none"/>` : ''}
-   ${DB.positioning.map((p, i) => { const o = p.kind === '자사'; return `<circle cx="${X(p.price)}" cy="${Y(p.ref)}" r="${o ? 13 : 8}" fill="${o ? (i === 0 ? '#1e2f5e' : '#3d6cca') : '#cbd5e1'}"/><text x="${X(p.price)}" y="${Y(p.ref) + (o ? 28 : 20)}" text-anchor="middle" fill="${o ? '#1e2f5e' : '#64748b'}" font-size="11.5" font-weight="${o ? 800 : 400}">${esc(p.name)}</text>`; }).join('')}</svg>
-   <table class="ui-tbl" style="margin-top:8px">${TH(['명칭', '가격(0-100)', '레퍼런스(0-100)', '구분'])}<tbody>${DB.positioning.map((p, i) => `<tr>${TD('positioning', i, 'name', 'lbl')}${TD('positioning', i, 'price', 'num')}${TD('positioning', i, 'ref', 'num')}${TD('positioning', i, 'kind', 'ctr')}${DEL('positioning', i)}</tr>`).join('')}</tbody></table>`;
-  const lane = (k, h4) => `<div class="lane"><h4>${t(h4)}</h4><div class="li ed" ${atk('notes', k, 'text')} data-list="1">${splitList(NT(k)).map(x => '· ' + esc(x)).join('<br>') || '<span style="color:#94a3b8">' + t('더블클릭해 입력') + '</span>'}</div></div>`;
-  let h = head('판매구조', '투트랙 포지셔닝, 채널 경계, 가격을 계약 체결 전에 결정한다');
-  h += `<div class="grid g2">${card('pos', t('투트랙 포지셔닝 맵') + ` <span class="tag-s">${t('자사 두 점 사이 점선 = 카니발 구간')}</span>`, svg, `<span class="b b-warn">${t('가정')}</span>` + ADD('positioning', { kind: '경쟁', price: 50, ref: 50 }))}
-   ${card('trk', t('트랙별 역할'), `<div style="display:grid;gap:8px">${lane('track_import', '수입산 트랙')}${lane('track_cn', '중국산 트랙')}</div>`)}</div>`;
   const open = DB.channels.filter(c => c.decision && c.decision !== '합의').length;
-  h += sec(1, '채널 경계 설계', `<span class="b ${open ? 'b-bad' : 'b-ok'}">${open ? t('계약 반영 전 미결') + ' ' + open + t('건') : t('전 채널 합의')}</span>`);
-  h += card('ch', t('채널'), `<div class="tblwrap"><table class="ui-tbl">${TH([['채널', 'text-align:left'], '주력 트랙', '판매 주체', '대리상 승인권', '가격 기준', '결정'])}<tbody>${DB.channels.map((c, i) => `<tr>${TD('channels', i, 'channel', 'lbl')}${TD('channels', i, 'track', 'ctr')}${TD('channels', i, 'seller', 'ctr')}${TD('channels', i, 'approver', 'ctr')}${TD('channels', i, 'price_rule', 'ctr')}${TD('channels', i, 'decision', 'ctr', badge(c.decision))}${DEL('channels', i)}</tr>`).join('')}</tbody></table></div>`, ADD('channels', { decision: '결정 필요' }), true);
-  h += sec(2, '출시 전 판매 준비 로드맵', ADD('roadmap', {}));
-  h += `<div class="grid g4">${DB.roadmap.map((r, i) => `<div class="lane draft" style="position:relative"><button class="del" data-del="roadmap" data-i="${i}" style="position:absolute;right:2px;top:2px">×</button><h4 class="ed" ${at('roadmap', i, 'period')}>${esc(r.period) || '—'}</h4><div class="li ed" ${at('roadmap', i, 'items')} data-list="1">${splitList(r.items).map(x => '· ' + esc(x)).join('<br>') || '—'}</div></div>`).join('')}</div>`;
+  const TB = tabs('p5', [['pos', '포지셔닝'], ['ch', '채널 경계', open], ['rm', '로드맵']]);
+  let h = head('판매구조', '투트랙 포지셔닝, 채널 경계, 가격을 계약 체결 전에 결정한다') + TB.html;
+  if (TB.cur === 'pos') {
+    const X = v => 50 + num(v) / 100 * 390, Y = v => 250 - num(v) / 100 * 230;
+    const own = DB.positioning.filter(p => p.kind === '자사');
+    const svg = `<svg viewBox="0 0 460 290" width="100%" style="display:block;max-height:340px;font-family:inherit">
+      <rect x="245" y="20" width="195" height="115" fill="#e9edf6"/><rect x="50" y="135" width="195" height="115" fill="#fff7ed"/><rect x="50" y="20" width="195" height="115" fill="#f0fdf4"/><rect x="245" y="135" width="195" height="115" fill="#f8fafc"/>
+      <text x="436" y="36" text-anchor="end" fill="#1e2f5e" font-size="11" font-weight="700">${t('프리미엄')}</text><text x="56" y="36" fill="#047857" font-size="11" font-weight="700">${t('가성비')}</text><text x="56" y="244" fill="#c2410c" font-size="11" font-weight="700">${t('가격경쟁')}</text><text x="436" y="244" text-anchor="end" fill="#94a3b8" font-size="11" font-weight="700">${t('고가·약레퍼런스')}</text>
+      ${[25, 50, 75].map(v => `<line x1="${X(v)}" y1="20" x2="${X(v)}" y2="250" stroke="#e2e8f0" stroke-dasharray="${v === 50 ? '' : '2 3'}"/><line x1="50" y1="${Y(v)}" x2="440" y2="${Y(v)}" stroke="#e2e8f0" stroke-dasharray="${v === 50 ? '' : '2 3'}"/>`).join('')}
+      <line x1="50" y1="250" x2="440" y2="250" stroke="#94a3b8"/><line x1="50" y1="20" x2="50" y2="250" stroke="#94a3b8"/>
+      <text x="245" y="276" text-anchor="middle" fill="#64748b" font-size="11">${t('가격')} →</text><text x="20" y="135" text-anchor="middle" fill="#64748b" font-size="11" transform="rotate(-90 20 135)">${t('임상 레퍼런스 · 브랜드')} →</text>
+      ${own.length === 2 ? `<line x1="${X(own[0].price)}" y1="${Y(own[0].ref)}" x2="${X(own[1].price)}" y2="${Y(own[1].ref)}" stroke="#dc2626" stroke-width="2" stroke-dasharray="5 4"/><text x="${(X(own[0].price) + X(own[1].price)) / 2 - 10}" y="${(Y(own[0].ref) + Y(own[1].ref)) / 2 - 8}" text-anchor="end" fill="#dc2626" font-size="10.5" font-weight="700">${t('카니발 구간')} Δ${Math.abs(num(own[0].price) - num(own[1].price))}</text>` : ''}
+      ${DB.positioning.map((p, i) => { const o = p.kind === '자사'; return `<circle cx="${X(p.price)}" cy="${Y(p.ref)}" r="${o ? 15 : 9}" fill="${o ? (i === 0 ? C.navy : C.mid) : '#cbd5e1'}" stroke="#fff" stroke-width="2"/><text x="${X(p.price)}" y="${Y(p.ref) + (o ? 30 : 22)}" text-anchor="middle" fill="${o ? C.navy : '#64748b'}" font-size="12" font-weight="${o ? 800 : 400}">${esc(p.name)}</text>`; }).join('')}</svg>`;
+    const lane = (k, h4, col) => `<div class="lane" style="border-left:4px solid ${col}"><h4>${t(h4)}</h4><div class="li ed" ${atk('notes', k, 'text')} data-list="1">${splitList(NT(k)).map(x => '· ' + esc(x)).join('<br>') || '<span style="color:#94a3b8">' + t('더블클릭해 입력') + '</span>'}</div></div>`;
+    h += `<div class="grid g-73">${card('pos', t('투트랙 포지셔닝 맵'), svg + `<table class="ui-tbl" style="margin-top:8px">${TH(['명칭', '가격(0-100)', '레퍼런스(0-100)', '구분'])}<tbody>${DB.positioning.map((p, i) => `<tr>${TD('positioning', i, 'name', 'lbl')}${TD('positioning', i, 'price', '', ib(p.price, 100, p.kind === '자사' ? C.navy : C.gray))}${TD('positioning', i, 'ref', '', ib(p.ref, 100, p.kind === '자사' ? C.mid : C.gray))}${TD('positioning', i, 'kind', 'ctr')}${DEL('positioning', i)}</tr>`).join('')}</tbody></table>`, `<span class="b b-warn">${t('가정')}</span>` + ADD('positioning', { kind: '경쟁', price: 50, ref: 50 }))}
+      ${card('trk', t('트랙별 역할'), `<div style="display:grid;gap:8px">${lane('track_import', '수입산 트랙', C.navy)}${lane('track_cn', '중국산 트랙', C.mid)}</div>`)}</div>`;
+  }
+  if (TB.cur === 'ch') {
+    const DS = ['합의', '결정 필요', '충돌', '쟁점'];
+    const pill = tr => { const s = String(tr); if (/양/.test(s)) return `<span class="tp"><i style="background:${C.navy}"></i><i style="background:${C.mid}"></i>${t('양 트랙')}</span>`; if (/수입/.test(s)) return `<span class="tp"><i style="background:${C.navy}"></i>${esc(s)}</span>`; if (/중국/.test(s)) return `<span class="tp"><i style="background:${C.mid}"></i>${esc(s)}</span>`; return esc(s); };
+    const unk = v => /미정|허용 여부/.test(v || '') ? `<span style="color:#b91c1c;font-weight:700">${esc(v)}</span>` : esc(v);
+    h += `<div class="grid g-37">${card('ch_s', t('결정 현황'), `<div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap">${donut(DS.map(s => ({ l: s, v: DB.channels.filter(c => c.decision === s).length, c: STC[s] })), { size: 140, stroke: 20, label: `${DB.channels.filter(c => c.decision === '합의').length}/${DB.channels.length}`, sub: t('합의'), fs: 22 })}<div class="dl2">${DS.map(s => `<div><i style="background:${STC[s]}"></i>${t(s)}<b>${DB.channels.filter(c => c.decision === s).length}</b></div>`).join('')}</div></div>${open ? `<div class="callout bad" style="margin-top:12px"><div class="co-l">${t('계약 반영 필요')}</div><div class="co-b">${t('계약 반영 전 미결')} ${open}${t('건')}</div></div>` : ''}`)}
+      ${card('ch', t('채널 경계 설계'), `<div class="tblwrap"><table class="ui-tbl">${TH([['채널', 'text-align:left'], '주력 트랙', '판매 주체', '대리상 승인권', '가격 기준', '결정'])}<tbody>${DB.channels.map((c, i) => `<tr class="${c.decision === '합의' ? '' : 'rl'}" style="--rl:${STC[c.decision] || C.gray}">${TD('channels', i, 'channel', 'lbl')}${TD('channels', i, 'track', 'ctr', pill(c.track))}${TD('channels', i, 'seller', 'ctr', unk(c.seller))}${TD('channels', i, 'approver', 'ctr', unk(c.approver))}${TD('channels', i, 'price_rule', 'ctr')}${TD('channels', i, 'decision', 'ctr', badge(c.decision))}${DEL('channels', i)}</tr>`).join('')}</tbody></table></div>`, ADD('channels', { decision: '결정 필요' }), true)}</div>`;
+  }
+  if (TB.cur === 'rm') {
+    h += `<div class="chev-row" style="grid-template-columns:repeat(${Math.max(DB.roadmap.length, 1)},1fr)">${DB.roadmap.map((r, i) => `<div class="chev ${i === 0 ? 'now' : ''}"><span>${i + 1}</span><b class="ed" ${at('roadmap', i, 'period')}>${esc(r.period) || '—'}</b></div>`).join('')}</div>`;
+    h += `<div class="grid" style="grid-template-columns:repeat(${Math.max(DB.roadmap.length, 1)},minmax(0,1fr))">${DB.roadmap.map((r, i) => `<div class="lane ${i === 0 ? 'now' : 'draft'}" style="position:relative"><button class="del" data-del="roadmap" data-i="${i}" style="position:absolute;right:2px;top:2px">×</button><div class="li ed" ${at('roadmap', i, 'items')} data-list="1">${splitList(r.items).map(x => `<div class="rm-i"><i></i>${esc(x)}</div>`).join('') || '—'}</div></div>`).join('')}</div><div style="margin-top:8px">${ADD('roadmap', {})}</div>`;
+  }
   return h;
 }
 
 /* ============ P6 사업성·리스크 ============ */
 function pageBiz() {
-  const rows = DB.volume.map((v, i) => [v, i]).filter(x => x[0].scenario === UI.scen).sort((a, b) => String(a[0].year).localeCompare(String(b[0].year)));
-  const mx = Math.max(1, ...DB.volume.map(v => num(v.total)));
-  const bw = Math.min(40, 300 / Math.max(rows.length, 1) / 2.4);
-  let bars = `<svg viewBox="0 0 400 200" width="100%" style="display:block;max-height:220px;font-family:inherit"><line x1="30" y1="170" x2="390" y2="170" stroke="#cbd5e1"/>`;
-  rows.forEach((x, k) => { const v = x[0], cx = 40 + (k + .5) * (350 / rows.length), ht = num(v.total) / mx * 140, hc = num(v.cn_track) / mx * 140;
-    bars += `<rect x="${cx - bw - 1}" y="${170 - ht}" width="${bw}" height="${ht}" fill="#1e2f5e"/><rect x="${cx + 1}" y="${170 - hc}" width="${bw}" height="${hc}" fill="#9bc0f4"/><text x="${cx}" y="188" text-anchor="middle" fill="#64748b" font-size="11">${esc(v.year)}</text><text x="${cx - bw / 2}" y="${165 - ht}" text-anchor="middle" fill="#1e2f5e" font-size="11" font-weight="700">${num(v.total)}</text><text x="${cx + bw / 2 + 1}" y="${165 - hc}" text-anchor="middle" fill="#2a51ab" font-size="10.5">${num(v.cn_track)}</text>`; });
-  bars += `</svg><div class="legend"><span><i style="background:#1e2f5e"></i>${t('전체 대수')}</span><span><i style="background:#9bc0f4"></i>${t('중국산 대수')}</span></div>
-   <table class="ui-tbl" style="margin-top:8px">${TH(['연도', '전체 대수', '중국산 대수', '중국산 비중'])}<tbody>${rows.map(x => { const v = x[0], i = x[1]; return `<tr>${TD('volume', i, 'year', 'ctr')}${TD('volume', i, 'total', 'num')}${TD('volume', i, 'cn_track', 'num')}<td class="num">${num(v.total) ? Math.round(num(v.cn_track) / num(v.total) * 100) : 0}%</td>${DEL('volume', i)}</tr>`; }).join('')}</tbody>
-   <tfoot><tr><td class="ctr">${t('합계')}</td><td class="num">${rows.reduce((a, x) => a + num(x[0].total), 0)}</td><td class="num">${rows.reduce((a, x) => a + num(x[0].cn_track), 0)}</td><td></td><td></td></tr></tfoot></table>`;
-  const C = { 9: '#fecaca', 6: '#fed7aa', 4: '#fde68a', 3: '#fde68a', 2: '#e6f4ea', 1: '#e6f4ea' };
-  let heat = '<div class="heat">';
-  [3, 2, 1].forEach(im => { heat += `<div class="ax">${t(['', '하', '중', '상'][im])}</div>`; [1, 2, 3].forEach(pr => { heat += `<div class="c" style="background:${C[im * pr]}">${DB.risks.map((r, i) => num(r.impact) === im && num(r.likelihood) === pr ? `<span class="rk" title="${esc(r.title)}">R${i + 1}</span>` : '').join('')}</div>`; }); });
-  heat += `<div class="ax" style="font-size:10px">${t('영향')}↑</div><div class="ax">${t('가능성')} ${t('하')}</div><div class="ax">${t('중')}</div><div class="ax">${t('상')}</div></div>`;
-  let h = head('사업성 · 리스크', '시나리오별 물량과 리스크 레지스터로 투자 판단 근거를 관리한다', seg('scen', [['보수', '보수'], ['기준', '기준'], ['공격', '공격']], UI.scen));
-  h += `<div class="grid g2">${card('vol', t('연도별 판매 대수') + ` (${t(UI.scen)})`, bars, `<span class="b b-warn">${t('가정값')}</span>` + ADD('volume', { scenario: UI.scen }))}${card('heat', t('리스크 히트맵'), heat, `<span class="b b-gray">${t('번호 = 레지스터')}</span>`)}</div>`;
-  h += sec(1, '리스크 레지스터');
-  h += card('risk', t('리스크'), `<div class="tblwrap"><table class="ui-tbl">${TH(['No', ['리스크', 'text-align:left'], '영향(1-3)', '가능성(1-3)', '등급', ['대응', 'text-align:left'], '담당'])}<tbody>${DB.risks.map((r, i) => { const L = riskLv(r); return `<tr><td class="ctr">R${i + 1}</td>${TD('risks', i, 'title', 'lbl')}${TD('risks', i, 'impact', 'ctr')}${TD('risks', i, 'likelihood', 'ctr')}<td class="ctr"><span class="b ${L[1]}">${L[0]}</span></td>${TD('risks', i, 'action')}${TD('risks', i, 'owner', 'ctr nw')}${DEL('risks', i)}</tr>`; }).join('')}</tbody></table></div>`, ADD('risks', { impact: '2', likelihood: '2' }), true);
+  const TB = tabs('p6', [['vol', '물량 시나리오'], ['mx', '리스크 매트릭스', DB.risks.filter(r => riskLv(r)[0] === 'High').length], ['reg', '리스크 레지스터']]);
+  let h = head('사업성 · 리스크', '시나리오별 물량과 리스크 레지스터로 투자 판단 근거를 관리한다') + TB.html;
+  if (TB.cur === 'vol') {
+    const SC = [['보수', C.lite], ['기준', C.navy], ['공격', C.mid]];
+    const years = [...new Set(DB.volume.map(v => String(v.year)))].sort();
+    const mx = Math.max(1, ...DB.volume.map(v => num(v.total)));
+    const gw = 420 / Math.max(years.length, 1), bw = Math.min(34, gw / 4.2);
+    let svg = `<svg viewBox="0 0 480 240" width="100%" style="display:block;max-height:300px;font-family:inherit">${[0, .25, .5, .75, 1].map(f => `<line x1="40" x2="470" y1="${200 - f * 170}" y2="${200 - f * 170}" stroke="${f ? '#eef2f7' : '#94a3b8'}"/><text x="34" y="${204 - f * 170}" text-anchor="end" font-size="10" fill="#94a3b8">${Math.round(mx * f)}</text>`).join('')}`;
+    years.forEach((y, k) => { const cx = 50 + gw * (k + .5); SC.forEach((s, j) => { const v = DB.volume.find(r => String(r.year) === y && r.scenario === s[0]); const val = v ? num(v.total) : 0, ht = val / mx * 170, x = cx + (j - 1.5) * (bw + 3), sel = s[0] === UI.scen; svg += `<rect x="${x}" y="${200 - ht}" width="${bw}" height="${ht}" fill="${s[1]}" opacity="${sel ? 1 : .45}"><title>${s[0]} ${y} ${val}</title></rect>${sel ? `<text x="${x + bw / 2}" y="${194 - ht}" text-anchor="middle" font-size="11" font-weight="800" fill="${C.navy}">${val}</text>` : ''}`; }); svg += `<text x="${cx}" y="220" text-anchor="middle" font-size="11.5" fill="#475569" font-weight="700">${esc(y)}</text>`; });
+    svg += '</svg>';
+    const tot = s => DB.volume.filter(v => v.scenario === s).reduce((a, v) => a + num(v.total), 0);
+    const rows = DB.volume.map((v, i) => [v, i]).filter(x => x[0].scenario === UI.scen).sort((a, b) => String(a[0].year).localeCompare(String(b[0].year)));
+    h += `<div class="bar-row">${seg('scen', SC.map(s => [s[0], s[0]]), UI.scen)}<span class="b b-warn">${t('가정값')}</span></div>`;
+    h += `<div class="grid g3 stat-row">${SC.map(s => `<div class="sbox ${s[0] === UI.scen ? 'on' : ''}" style="border-top-color:${s[1]}"><div class="sb-l">${t(s[0])} · ${years.length}${t('년 누계')}</div><div class="sb-v" style="color:${C.navy}">${tot(s[0]).toLocaleString()}<small>${t('대')}</small></div></div>`).join('')}</div>`;
+    h += `<div class="grid g-73">${card('vol', t('연도별 판매 대수 — 시나리오 비교'), svg + lg(SC.map(s => [s[0], s[1]])))}
+      ${card('vol_mix', t('트랙 구성') + ` (${t(UI.scen)})`, rows.map(x => { const v = x[0], cnv = num(v.cn_track), im = Math.max(0, num(v.total) - cnv); return `<div class="hb"><div class="hb-l">${esc(v.year)}</div><div class="hb-b">${stack([{ l: t('수입산'), v: im, c: C.navy }, { l: t('중국산'), v: cnv, c: C.lite, tc: '#1e2f5e' }], { h: 22, min: 12 })}</div><div class="hb-v">${num(v.total)}</div></div>`; }).join('') + lg([['수입산', C.navy], ['중국산', C.lite]]) + `<table class="ui-tbl" style="margin-top:10px">${TH(['연도', '전체 대수', '중국산 대수', '중국산 비중'])}<tbody>${rows.map(x => { const v = x[0], i = x[1]; return `<tr>${TD('volume', i, 'year', 'ctr')}${TD('volume', i, 'total', 'num')}${TD('volume', i, 'cn_track', 'num')}<td class="num">${num(v.total) ? Math.round(num(v.cn_track) / num(v.total) * 100) : 0}%</td>${DEL('volume', i)}</tr>`; }).join('')}</tbody></table>`, ADD('volume', { scenario: UI.scen }))}</div>`;
+  }
+  if (TB.cur === 'mx') {
+    const CC = { 9: '#fecaca', 6: '#fed7aa', 4: '#fde68a', 3: '#fef3c7', 2: '#ecfdf5', 1: '#f0fdf4' };
+    let heat = '<div class="heat2"><div class="hx-y">' + t('영향') + ' ↑</div><div class="hx-g">';
+    [3, 2, 1].forEach(im => { [1, 2, 3].forEach(pr => { const rs = DB.risks.map((r, i) => [r, i]).filter(x => num(x[0].impact) === im && num(x[0].likelihood) === pr); heat += `<div class="hc" style="background:${CC[im * pr]}"><span class="hc-s">${im * pr}</span>${rs.map(x => `<div class="hc-r" title="${esc(x[0].action)}"><b>R${x[1] + 1}</b>${esc(x[0].title)}</div>`).join('')}</div>`; }); });
+    heat += `</div><div class="hx-x"><span>${t('가능성')} ${t('하')}</span><span>${t('중')}</span><span>${t('상')} →</span></div></div>`;
+    const top = DB.risks.map((r, i) => [r, i]).filter(x => riskLv(x[0])[0] === 'High').sort((a, b) => num(b[0].impact) * num(b[0].likelihood) - num(a[0].impact) * num(a[0].likelihood));
+    h += `<div class="grid g-73">${card('heat', t('리스크 매트릭스 (영향 × 가능성)'), heat)}${card('top', t('High 리스크') + ` <span class="tag-s">${top.length}${t('건')}</span>`, top.map(x => `<div class="rk-c"><div class="rk-h"><b>R${x[1] + 1}</b> ${esc(x[0].title)}<span class="rk-sc">${num(x[0].impact) * num(x[0].likelihood)}</span></div><div class="rk-a">${esc(x[0].action)}</div><div class="rk-o">${esc(x[0].owner)}</div></div>`).join('') || `<div class="hint">${t('High 리스크 없음')}</div>`)}</div>`;
+  }
+  if (TB.cur === 'reg') {
+    h += card('risk', t('리스크 레지스터'), `<div class="tblwrap"><table class="ui-tbl">${TH(['No', ['리스크', 'text-align:left'], '영향(1-3)', '가능성(1-3)', ['점수', 'width:120px'], '등급', ['대응', 'text-align:left'], '담당'])}<tbody>${DB.risks.map((r, i) => { const L = riskLv(r), sc = num(r.impact) * num(r.likelihood); return `<tr class="rl" style="--rl:${L[0] === 'High' ? C.red : L[0] === 'Mid' ? C.amber : C.green}"><td class="ctr">R${i + 1}</td>${TD('risks', i, 'title', 'lbl')}${TD('risks', i, 'impact', 'ctr')}${TD('risks', i, 'likelihood', 'ctr')}<td>${ib(sc, 9, L[0] === 'High' ? C.red : L[0] === 'Mid' ? C.amber : C.green)}</td><td class="ctr"><span class="b ${L[1]}">${L[0]}</span></td>${TD('risks', i, 'action')}${TD('risks', i, 'owner', 'ctr nw')}${DEL('risks', i)}</tr>`; }).join('')}</tbody></table></div>`, ADD('risks', { impact: '2', likelihood: '2' }), true);
+  }
   return h;
 }
 
 /* ============ P7 데이터 연동 ============ */
 function pageData() {
   const c = jget(LS_CLOUD) || {};
-  let h = head('데이터 연동', '노션 = 실행 로그, 구글시트 = 원본 데이터, 웹앱 = 판정 화면');
-  h += `<div class="grid g2">${card('cloud', t('구글시트 연결'), `<div class="frm"><label>Apps Script URL</label><input id="cUrl" name="bls-gas-url" autocomplete="off" spellcheck="false" value="${esc(c.url || '')}" placeholder="https://script.google.com/macros/s/…/exec" /><label>${t('토큰')}</label><input id="cTok" name="bls-gas-token" type="text" autocomplete="off" spellcheck="false" value="${esc(c.token || '')}" placeholder="Code.gs의 TOKEN" /></div>
+  const TB = tabs('p7', [['conn', '연결'], ['set', '설정값'], ['tabs', '시트 탭 구조']]);
+  let h = head('데이터 연동', '노션 = 실행 로그, 구글시트 = 원본 데이터, 웹앱 = 판정 화면') + TB.html;
+  if (TB.cur === 'conn') h += `<div class="grid g2">${card('cloud', t('구글시트 연결'), `<div class="conn-st ${c.url ? (SYNC.st === 'err' ? 'err' : 'ok') : ''}"><i></i>${c.url ? (SYNC.st === 'err' ? t('연결 오류') : t('시트 연결됨')) : t('로컬 모드')}</div><div class="frm"><label>Apps Script URL</label><input id="cUrl" name="bls-gas-url" autocomplete="off" spellcheck="false" value="${esc(c.url || '')}" placeholder="https://script.google.com/macros/s/…/exec" /><label>${t('토큰')}</label><input id="cTok" name="bls-gas-token" type="text" autocomplete="off" spellcheck="false" value="${esc(c.token || '')}" placeholder="Code.gs의 TOKEN" /></div>
     <div style="display:flex;gap:6px;margin-top:10px;flex-wrap:wrap"><button class="ui-btn pri" data-act="cSave">${t('연결 저장 후 불러오기')}</button><button class="ui-btn" data-act="push">${t('지금 시트에 저장')}</button><button class="ui-btn dgr" data-act="cClear">${t('연결 해제')}</button></div>
     <div class="hint" style="margin-top:10px">${t('URL과 토큰은 이 브라우저에만 저장되고 HTML 파일에는 들어가지 않습니다. 편집 1.5초 후 자동으로 시트에 저장되며, 주차별 스냅샷이 _history 탭에 쌓입니다.')}</div>
     <div class="hint" style="margin-top:4px">${t('상태')}: <b>${esc(SYNC.msg || ({ local: t('로컬'), cloud: t('시트 연결됨'), sync: t('동기화 중'), err: t('오류') }[SYNC.st] || SYNC.st))}</b></div>`)}
    ${card('file', t('엑셀 파일'), `<div style="display:flex;gap:6px;flex-wrap:wrap"><button class="ui-btn pri" data-act="import">${t('엑셀 가져오기')}</button><button class="ui-btn" data-act="export">${t('엑셀 내보내기')}</button><button class="ui-btn dgr" data-act="reset">${t('로컬 데이터 초기화')}</button></div>
     <div class="hint" style="margin-top:10px">${t('bls_pm_data.xlsx 형식을 그대로 읽습니다. 가져오면 현재 화면 데이터를 덮어씁니다. 클라우드가 연결돼 있으면 가져온 내용이 시트에도 저장됩니다.')}</div>`)}</div>`;
-  h += sec(1, '설정값', `<span class="hint">${t('더블클릭 수정')}</span>`);
-  h += card('set', t('settings'), `<table class="ui-tbl">${TH([['항목키', 'width:160px'], ['값', 'width:200px'], '설명'])}<tbody>${DB.settings.map((r, i) => `<tr>${TD('settings', i, 'key', 'lbl nw')}${TD('settings', i, 'value', 'ctr', esc(r.value) || `<span style="color:#b91c1c">${t('공란')}</span>`)}${TD('settings', i, 'note')}${DEL('settings', i)}</tr>`).join('')}</tbody></table>`, ADD('settings', {}), true);
-  h += sec(2, '시트 탭 구조');
-  h += card('tabs', t('탭'), `<table class="ui-tbl">${TH(['탭', '이름', '용도', '연결 화면', '행수', ['열', 'text-align:left']])}<tbody>${Object.keys(SCHEMA).map(k => `<tr><td class="lbl">${k}</td><td class="ctr">${esc(SCHEMA[k].name)}</td><td>${esc(SCHEMA[k].use)}</td><td class="ctr">${t(SCHEMA[k].page)}</td><td class="num">${DB[k].length}</td><td>${SCHEMA[k].cols.map(c => esc(c.l)).join(' · ')}</td><td class="x"></td></tr>`).join('')}</tbody></table>`, '', true);
+  if (TB.cur === 'set') h += card('set', t('설정값') + ` <span class="tag-s">${t('더블클릭 수정')}</span>`, `<table class="ui-tbl">${TH([['항목키', 'width:160px'], ['값', 'width:200px'], '설명'])}<tbody>${DB.settings.map((r, i) => `<tr>${TD('settings', i, 'key', 'lbl nw')}${TD('settings', i, 'value', 'ctr', esc(r.value) || `<span style="color:#b91c1c">${t('공란')}</span>`)}${TD('settings', i, 'note')}${DEL('settings', i)}</tr>`).join('')}</tbody></table>`, ADD('settings', {}), true);
+  if (TB.cur === 'tabs') { const mx = Math.max(1, ...Object.keys(SCHEMA).map(k => DB[k].length)); h += card('tabs', t('시트 탭 구조'), `<table class="ui-tbl">${TH(['탭', '이름', '용도', '연결 화면', ['행수', 'width:140px'], ['열', 'text-align:left']])}<tbody>${Object.keys(SCHEMA).map(k => `<tr><td class="lbl">${k}</td><td class="ctr">${esc(SCHEMA[k].name)}</td><td>${esc(SCHEMA[k].use)}</td><td class="ctr">${t(SCHEMA[k].page)}</td><td>${ib(DB[k].length, mx, C.mid)}</td><td>${SCHEMA[k].cols.map(c => esc(c.l)).join(' · ')}</td><td class="x"></td></tr>`).join('')}</tbody></table>`, '', true); }
   return h;
 }
 
@@ -435,13 +676,15 @@ function pageEmpty() {
   return head('BLS PM', 'BIOLASE 중국 OEM 프로젝트 판정 화면') + card('empty', t('데이터 없음'), `<div class="empty">${t('아직 데이터가 없습니다.')}<br>${t('bls_pm_data.xlsx를 가져오거나, 구글시트를 연결하세요.')}<div style="margin-top:14px;display:flex;gap:8px;justify-content:center"><button class="ui-btn pri" data-act="import">${t('엑셀 가져오기')}</button><button class="ui-btn" data-page="p7">${t('구글시트 연결')}</button></div></div>`);
 }
 
+
 /* ============ 렌더 ============ */
 const PAGES = { p1: pageGate, p2: pageStruct, p3: pageReg, p4: pageLine, p5: pageSales, p6: pageBiz, p7: pageData };
 function render() {
   document.documentElement.classList.toggle('lang-zh', UI.lang === 'zh');
   document.getElementById('lk').classList.toggle('on', UI.lang !== 'zh'); document.getElementById('lz').classList.toggle('on', UI.lang === 'zh');
+  document.body.classList.toggle('side-hide', !!UI.sideHide);
   renderSide();
-  const m = MENU.flatMap(g => g[1]).find(x => x[0] === UI.page) || MENU[0][1][0];
+  const m = MENU.flatMap(g => g[2]).find(x => x[0] === UI.page) || MENU[0][2][0];
   document.getElementById('crumb').innerHTML = `${esc(S('project_name') || 'BIOLASE')} / <b>${t(m[1])}</b>`;
   const sy = window.scrollY;
   document.getElementById('view').innerHTML = (!DB.gates.length && UI.page !== 'p7') ? pageEmpty() : PAGES[UI.page]();
@@ -572,6 +815,8 @@ document.addEventListener('click', e => {
   const q = s => e.target.closest(s);
   let el;
   if ((el = q('[data-page]'))) { UI.page = el.dataset.page; document.getElementById('side').classList.remove('open'); render(); window.scrollTo(0, 0); return; }
+  if ((el = q('[data-tab]'))) { UI.tab = UI.tab || {}; UI.tab[el.dataset.tab] = el.dataset.v; render(); return; }
+  if ((el = q('[data-sg]'))) { UI.sg = UI.sg || {}; UI.sg[el.dataset.sg] = !UI.sg[el.dataset.sg]; render(); return; }
   if ((el = q('[data-tog]'))) { const r = DB[el.dataset.tog][+el.dataset.i]; r[el.dataset.f] = yes(r[el.dataset.f]) ? 'N' : 'Y'; persist(); render(); return; }
   if ((el = q('[data-del]'))) { const tb = el.dataset.del, i = +el.dataset.i; const r = DB[tb][i]; const lab = Object.values(r).find(v => String(v).trim()) || ''; if (confirm(t('이 행을 삭제할까요?') + '\n' + lab)) { DB[tb].splice(i, 1); persist(); render(); } return; }
   if ((el = q('[data-add]'))) { let def = {}; try { def = JSON.parse(el.dataset.def || '{}'); } catch (x) {} DB[el.dataset.add].push(def); persist(); render(); return; }
@@ -579,6 +824,8 @@ document.addEventListener('click', e => {
   if ((el = q('[data-seg]'))) { UI[el.dataset.seg] = el.dataset.v; render(); return; }
   if ((el = q('[data-act]'))) {
     const a = el.dataset.act;
+    if (a === 'sideHide') { UI.sideHide = true; render(); }
+    if (a === 'sgAll') { UI.sg = {}; if (el.dataset.v === '0') MENU.forEach(g => UI.sg[g[1]] = true); render(); }
     if (a === 'import') document.getElementById('fileIn').click();
     if (a === 'export') exportXlsx();
     if (a === 'reset' && confirm(t('이 브라우저의 로컬 데이터를 지웁니다. 시트 데이터는 그대로입니다.'))) { DB = emptyDB(); ls(LS_DATA, JSON.stringify(DB)); render(); }
@@ -589,7 +836,7 @@ document.addEventListener('click', e => {
 });
 document.getElementById('fileIn').onchange = e => { const f = e.target.files[0]; if (f) importXlsx(f); e.target.value = ''; };
 document.getElementById('syncBtn').onclick = () => { const c = jget(LS_CLOUD) || {}; if (c.url) pullCloud(); else document.getElementById('fileIn').click(); };
-document.getElementById('menuBtn').onclick = () => document.getElementById('side').classList.toggle('open');
+document.getElementById('menuBtn').onclick = () => { if (window.innerWidth <= 768) document.getElementById('side').classList.toggle('open'); else { UI.sideHide = !UI.sideHide; render(); } };
 document.getElementById('lk').onclick = () => { UI.lang = 'ko'; render(); };
 document.getElementById('lz').onclick = () => { UI.lang = 'zh'; render(); };
 
